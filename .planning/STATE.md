@@ -5,20 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-04-01)
 
 **Core value:** Saved links must be easy to sync from notes and fast to find again through simple browsing and filtering.
-**Current focus:** Milestone v1.1 - UI/UX Refinement
+**Current focus:** Milestone v1.1 complete
 
 ## Current Position
 
-Phase: Not started (defining requirements)
+Phase: All phases complete
 Plan: —
-Status: Defining requirements
-Last activity: 2026-04-01 — Milestone v1.1 started
+Status: v1.1 milestone complete
+Last activity: 2026-04-01 — Milestone v1.1 shipped
 
 ## Milestone History
 
 | Milestone | Completed | Key Accomplishments |
 |-----------|-----------|-------------------|
 | v1.0 | 2026-03-31 | Sync pipeline, 186 bookmarks, static routes, homepage search/filters, Cloudflare Pages deploy |
+| v1.1 | 2026-04-01 | Dark theme, side panel, integrated search, hover previews, external link icons |
 
 ## Accumulated Context
 
@@ -31,20 +32,21 @@ Last activity: 2026-04-01 — Milestone v1.1 started
 - Phase 3: Real-time search filter with debounce
 - Phase 3: Tag/category filters use URL query params
 - Phase 4: Build chains sync before Astro build
-- v1.1: Dark theme by default
+- v1.1: Warm dark theme (#1a1614, #d4a574 amber accents)
 - v1.1: Remove tag pills, use dropdown only
 - v1.1: Integrated search in dropdown
-- v1.1: Side panel for bookmark details (no dedicated `/b/[slug]` page)
+- v1.1: Side panel for bookmark details (hover preview + click for full details)
+- v1.1: External links have icon + amber color distinction
 
 ### Pending Todos
 
-- v1.1 UI/UX improvements
+None — v1.1 complete
 
 ### Blockers/Concerns
 
-None yet.
+None
 
 ## Session Continuity
 
-Last session: 2026-04-01 03:30 +08
-Stopped at: Starting new milestone v1.1
+Last session: 2026-04-01 04:20 +08
+Stopped at: Milestone v1.1 shipped

@@ -3,7 +3,7 @@
 ## Milestones
 
 - ✅ **v1.0 MVP** - Phases 1-4 (shipped 2026-04-01)
-- 🚧 **v1.1 UI/UX Refinement** - Phase 5 (in progress)
+- ✅ **v1.1 UI/UX Refinement** - Phase 5 (shipped 2026-04-01)
 - 📋 **v2.0 [TBD]** - Planned
 
 ## Phases
@@ -35,11 +35,10 @@ Plans:
   2. Visitor can open a page for every normalized tag and see only bookmarks assigned to that tag.
   3. Visitor can open a page for every category path and see only bookmarks assigned to that category hierarchy.
   4. The generated static route set covers all bookmarks, tags, and categories with no missing-page gaps at build time.
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 1 plan
 
 Plans:
-- [ ] 02-01: Generate static bookmark detail pages, tag listing pages, and category listing pages from the normalized bookmark dataset.
+- [x] 02-01: Generate static bookmark detail pages, tag listing pages, and category listing pages from the normalized bookmark dataset.
 
 ### Phase 3: Homepage Retrieval UX
 **Goal**: Visitors can use the homepage as the fastest retrieval surface for the bookmark archive.
@@ -50,11 +49,10 @@ Plans:
   2. Visitor can search bookmarks on the homepage by title, URL, description, and tags.
   3. Visitor can narrow the homepage list by tag and by category without losing route correctness established earlier.
   4. Visitor sees a clear empty state when the current search and filter combination returns no bookmarks.
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 1 plan
 
 Plans:
-- [ ] 03-01: TBD
+- [x] 03-01: Homepage with search, tag/category filters, grouped ordering
 
 ### Phase 4: Deployable Static Release
 **Goal**: The site builds, deploys, and verifies as a reproducible static release without depending on the external notes directory.
@@ -65,18 +63,17 @@ Plans:
   2. The project builds successfully from committed repo contents even when the external notes directory is unavailable.
   3. Cloudflare Pages has the required Bun version and build settings to deploy the generated `dist` output reproducibly.
   4. Automated verification confirms homepage, bookmark detail, tag, and category routes build and resolve successfully.
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: TBD
+- [x] 04-01: Build pipeline, Cloudflare Pages config, route verification
 
 </details>
 
-### 🚧 v1.1 UI/UX Refinement (In Progress)
+<details>
+<summary>✅ v1.1 UI/UX Refinement (Phase 5) - SHIPPED 2026-04-01</summary>
 
-**Milestone Goal:** Deliver a dark-first redesigned bookmark archive with cleaner layout, hover previews, side panel details, and improved search.
-
-#### Phase 5: UI/UX Refinement
+### Phase 5: UI/UX Refinement
 **Goal**: Site has a dark-first redesign with cleaner layout (no tag pills, dropdown-only selectors, integrated search) and improved bookmark interactions (hover preview, side panel, visual distinction for external links).
 **Depends on**: Phase 4
 **Requirements**: THEME-01, THEME-02, THEME-03, LAYOUT-01, LAYOUT-02, LAYOUT-03, LAYOUT-04, INTER-01, INTER-02, INTER-03, INTER-04, INTER-05, SEARCH-01, SEARCH-02, SEARCH-03
@@ -86,13 +83,12 @@ Plans:
   3. Hovering a bookmark shows a quick preview with title, URL, and tags; clicking a bookmark opens a side panel displaying full details (title, external URL as clickable link, description, tags, category, source path).
   4. Side panel contains a "Visit Site" button that opens the external URL in a new tab, and all external bookmark links have distinct visual styling (icon + color).
   5. Search filters bookmarks in real-time as the user types, with search state persisted in URL query parameters.
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
-- [ ] 05-03: TBD
+- [x] 05-01: Dark-first redesign with warm dark palette, CSS variables
+
+</details>
 
 ### 📋 v2.0 [TBD] (Planned)
 
@@ -103,7 +99,7 @@ Plans:
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 1. Sync Contract | v1.0 | 1/1 | Complete | 2026-04-01 |
-| 2. Static Archive Routes | v1.0 | 0/1 | Not started | - |
-| 3. Homepage Retrieval UX | v1.0 | 0/1 | Not started | - |
-| 4. Deployable Static Release | v1.0 | 0/1 | Not started | - |
-| 5. UI/UX Refinement | v1.1 | 0/3 | Not started | - |
+| 2. Static Archive Routes | v1.0 | 1/1 | Complete | 2026-04-01 |
+| 3. Homepage Retrieval UX | v1.0 | 1/1 | Complete | 2026-04-01 |
+| 4. Deployable Static Release | v1.0 | 1/1 | Complete | 2026-04-01 |
+| 5. UI/UX Refinement | v1.1 | 1/1 | Complete | 2026-04-01 |
