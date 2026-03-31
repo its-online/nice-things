@@ -55,34 +55,50 @@
 
 ## v1.1 Requirements
 
-UI/UX refinement milestone (v1.0 shipped: 2026-03-31)
-
 ### Theme
 
-- [ ] **THEME-01**: Site defaults to dark color scheme on first load
-- [ ] **THEME-02**: Dark-first design with appropriate contrast ratios
-- [ ] **THEME-03**: Design system uses CSS variables for easy theme switching
+- [x] **THEME-01**: Site defaults to dark color scheme on first load
+- [x] **THEME-02**: Dark-first design with appropriate contrast ratios
+- [x] **THEME-03**: Design system uses CSS variables for easy theme switching
 
 ### Layout
 
-- [ ] **LAYOUT-01**: Tag pills removed from main bookmark list UI
-- [ ] **LAYOUT-02**: Tag/category selector uses dropdown only
-- [ ] **LAYOUT-03**: Search input integrated into the dropdown selector
-- [ ] **LAYOUT-04**: Side panel for bookmark details (replaces `/b/[slug]` page)
+- [x] **LAYOUT-01**: Tag pills removed from main bookmark list UI
+- [x] **LAYOUT-02**: Tag/category selector uses dropdown only
+- [x] **LAYOUT-03**: Search input integrated into the dropdown selector
+- [x] **LAYOUT-04**: Side panel for bookmark details (replaces `/b/[slug]` page)
 
 ### Bookmark Interactions
 
-- [ ] **INTER-01**: Hover on bookmark shows quick preview (title, URL, tags)
-- [ ] **INTER-02**: Click on bookmark opens detailed side panel
-- [ ] **INTER-03**: Side panel shows: title, external URL (as clickable link), description, tags, category, source path
-- [ ] **INTER-04**: "Visit Site" button in side panel opens external URL in new tab
-- [ ] **INTER-05**: External bookmark links have visual distinction (icon + color)
+- [x] **INTER-01**: Hover on bookmark shows quick preview (title, URL, tags)
+- [x] **INTER-02**: Click on bookmark opens detailed side panel
+- [x] **INTER-03**: Side panel shows: title, external URL (as clickable link), description, tags, category, source path
+- [x] **INTER-04**: "Visit Site" button in side panel opens external URL in new tab
+- [x] **INTER-05**: External bookmark links have visual distinction (icon + color)
 
 ### Search & Filter
 
-- [ ] **SEARCH-01**: Search input integrated with tag/category dropdown
-- [ ] **SEARCH-02**: Search filters bookmarks in real-time as user types
-- [ ] **SEARCH-03**: URL query params preserved for search state
+- [x] **SEARCH-01**: Search input integrated with tag/category dropdown
+- [x] **SEARCH-02**: Search filters bookmarks in real-time as user types
+- [x] **SEARCH-03**: URL query params preserved for search state
+
+## v1.2 Requirements
+
+Tag selection fixes and UI cleanup (v1.1 shipped: 2026-04-01)
+
+### Tag Selection
+
+- [ ] **TAG-01**: Selected tag is visually distinct from unselected tags (different style)
+- [ ] **TAG-02**: Tag selected in dropdown syncs with preview area tag display
+- [ ] **TAG-03**: Tag selected in preview area syncs with dropdown
+
+### Preview
+
+- [ ] **PREVIEW-01**: Preview shows bookmark description instead of tag list
+
+### UI Cleanup
+
+- [ ] **CLEANUP-01**: External link icon removed from bookmark display
 
 ## v2 Requirements
 
@@ -101,8 +117,8 @@ UI/UX refinement milestone (v1.0 shipped: 2026-03-31)
 
 | Feature | Reason |
 |---------|--------|
-| Dedicated `/b/[slug]` detail page | Side panel provides same info without page navigation (v1.1) |
-| Light theme toggle | Dark theme is the primary experience (v1.1) |
+| Dedicated `/b/[slug]` detail page | Side panel provides same info without page navigation |
+| Light theme toggle | Dark theme is the primary experience |
 | Server-side rendering | Static site keeps deployment simple |
 | Rendering bookmark markdown bodies | v1 is metadata-only for simplicity |
 | User accounts, likes, comments | Public read-only archive |
@@ -112,27 +128,17 @@ UI/UX refinement milestone (v1.0 shipped: 2026-03-31)
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| THEME-01 | Phase 5 | Pending |
-| THEME-02 | Phase 5 | Pending |
-| THEME-03 | Phase 5 | Pending |
-| LAYOUT-01 | Phase 5 | Pending |
-| LAYOUT-02 | Phase 5 | Pending |
-| LAYOUT-03 | Phase 5 | Pending |
-| LAYOUT-04 | Phase 5 | Pending |
-| INTER-01 | Phase 5 | Pending |
-| INTER-02 | Phase 5 | Pending |
-| INTER-03 | Phase 5 | Pending |
-| INTER-04 | Phase 5 | Pending |
-| INTER-05 | Phase 5 | Pending |
-| SEARCH-01 | Phase 5 | Pending |
-| SEARCH-02 | Phase 5 | Pending |
-| SEARCH-03 | Phase 5 | Pending |
+| TAG-01 | Phase 6 | Pending |
+| TAG-02 | Phase 6 | Pending |
+| TAG-03 | Phase 6 | Pending |
+| PREVIEW-01 | Phase 6 | Pending |
+| CLEANUP-01 | Phase 6 | Pending |
 
 **Coverage:**
-- v1.1 requirements: 15 total
-- Mapped to phases: 15
+- v1.2 requirements: 5 total
+- Mapped to phases: 5
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-31*
-*Last updated: 2026-04-01 after v1.1 milestone start*
+*Last updated: 2026-04-01 after v1.2 milestone start*
