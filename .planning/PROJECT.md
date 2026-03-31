@@ -15,16 +15,20 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 - ✓ Import bookmark metadata from notes directory into committed JSON dataset — v1.0 Phase 1
 - ✓ Browse bookmarks publicly with search, tag filtering, and category filtering — v1.0 Phase 3
 - ✓ Static site deployable on Cloudflare Pages — v1.0 Phase 4
+- ✓ Dark theme by default — v1.1 Phase 5
+- ✓ Remove tag pills, use dropdown only — v1.1 Phase 5
+- ✓ Integrated search in dropdown — v1.1 Phase 5
+- ✓ Side panel for bookmark details — v1.1 Phase 5
+- ✓ External link visual distinction (icon + color) — v1.1 Phase 5
 
 ### Active
 
-<!-- v1.1 UI/UX Refinement -->
+<!-- v1.2 Tag Selection Fixes -->
 
-- [ ] Dark theme by default
-- [ ] Remove tag pills from main UI, use dropdown selector only
-- [ ] Integrated search within tag/category dropdown
-- [ ] Side panel bookmark preview instead of dedicated detail page
-- [ ] Visual distinction between external links and internal navigation
+- [ ] Selected tag visually distinct from unselected
+- [ ] Dropdown tag selector synced with preview area
+- [ ] Preview shows description instead of tags
+- [ ] Remove external link icon from UI
 
 ### Out of Scope
 
@@ -36,9 +40,8 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 - Source bookmarks live outside this repo at `../notes/resources/bookmarks/marks/`
 - Source files are markdown with YAML frontmatter
 - `articles/` includes extra `.png` files and must be excluded from sync
-- `tags` may be empty and `bookmark_done` may be blank, so normalization is required
 - 186 bookmark records in committed dataset
-- v1.0 routes: `/`, `/tags/[tag]`, `/category/[...path]`, `/b/[slug]`
+- v1.1 routes: `/`, `/tags/[tag]`, `/category/[...path]`, `/b/[slug]`
 
 ## Constraints
 
@@ -50,14 +53,16 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
-|----------|-----------|---------|
+|----------|-----------|--------|
 | Use Bun for scaffold, local dev, and build commands | One consistent toolchain | ✓ Good |
 | Commit generated bookmark content into repo | Cloudflare Pages cannot access external notes | ✓ Good |
 | Prioritize fast archival lookup over feature breadth | Primary user need is finding links | ✓ Good |
-| Side panel for bookmark details | Eliminates page transitions, keeps context | — Pending |
-| Dark theme by default | User preference | — Pending |
-| Remove tag pills, use dropdown only | Cleaner UI, less visual noise | — Pending |
-| Integrated search in dropdown | Single control for search + filter | — Pending |
+| Side panel for bookmark details | Eliminates page transitions, keeps context | ✓ Good |
+| Warm dark theme (#1a1614, #d4a574) | User preference | ✓ Good |
+| Remove tag pills, use dropdown only | Cleaner UI, less visual noise | ✓ Good |
+| Integrated search in dropdown | Single control for search + filter | ✓ Good |
+| Remove external link icon | Cleaner UI per user feedback | — Pending |
+| Sync dropdown with preview area tags | Fix tag selection interaction bug | — Pending |
 
 ## Evolution
 
@@ -77,4 +82,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-01 after v1.0 milestone complete*
+*Last updated: 2026-04-01 after v1.1 milestone complete*

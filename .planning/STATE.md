@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-04-01)
 
 **Core value:** Saved links must be easy to sync from notes and fast to find again through simple browsing and filtering.
-**Current focus:** Milestone v1.1 complete
+**Current focus:** Milestone v1.2 - Tag Selection Fixes
 
 ## Current Position
 
-Phase: All phases complete
+Phase: Not started (defining requirements)
 Plan: —
-Status: v1.1 milestone complete
-Last activity: 2026-04-01 — Milestone v1.1 shipped
+Status: Defining requirements
+Last activity: 2026-04-01 — Milestone v1.2 started
 
 ## Milestone History
 
@@ -20,6 +20,7 @@ Last activity: 2026-04-01 — Milestone v1.1 shipped
 |-----------|-----------|-------------------|
 | v1.0 | 2026-03-31 | Sync pipeline, 186 bookmarks, static routes, homepage search/filters, Cloudflare Pages deploy |
 | v1.1 | 2026-04-01 | Dark theme, side panel, integrated search, hover previews, external link icons |
+| v1.2 | In progress | Tag selection fixes |
 
 ## Accumulated Context
 
@@ -37,16 +38,20 @@ Last activity: 2026-04-01 — Milestone v1.1 shipped
 - v1.1: Integrated search in dropdown
 - v1.1: Side panel for bookmark details (hover preview + click for full details)
 - v1.1: External links have icon + amber color distinction
+- v1.2: Selected tag should be visually distinct
+- v1.2: Dropdown and preview area tag selection should sync
+- v1.2: Preview should show description instead of tags
+- v1.2: Remove external link icon
 
 ### Pending Todos
 
-None — v1.1 complete
+- v1.2 tag selection UI fixes
 
 ### Blockers/Concerns
 
-None
+None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-01 04:20 +08
-Stopped at: Milestone v1.1 shipped
+Last session: 2026-04-01 04:30 +08
+Stopped at: Starting new milestone v1.2
