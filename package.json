@@ -1,0 +1,24 @@
+{
+  "name": "nice-things",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.11",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "bun run sync:bookmarks && astro build",
+    "preview": "astro preview",
+    "sync:bookmarks": "bun run scripts/sync-bookmarks.ts",
+    "test": "bun test",
+    "verify:routes": "bun run scripts/verify-routes.ts"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "gray-matter": "^4.0.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "bun-types": "^1.3.11",
+    "typescript": "^5.9.0"
+  }
+}

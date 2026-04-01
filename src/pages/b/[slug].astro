@@ -1,0 +1,149 @@
+---
+import bookmarks from "../../data/bookmarks.json";
+import "../../styles/shared.css";
+
+export function getStaticPaths() {
+  return bookmarks.map((bookmark) => ({
+    params: { slug: bookmark.slug },
+    props: { bookmark },
+  }));
+}
+
+const { bookmark } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{bookmark.title} | Nice Things</title>
+  </head>
+  <body>
+    <main>
+      <a href="/" class="back-link">← Nice Things</a>
+
+      <div class="detail-layout">
+        <div class="content-column">
+          <h1>{bookmark.title}</h1>
+          {bookmark.description && (
+            <p class="description">{bookmark.description}</p>
+          )}
+        </div>
+
+        <aside class="metadata-sidebar">
+          <div class="meta-section">
+            <h2>URL</h2>
+            <a href={bookmark.url} target="_blank" rel="noopener noreferrer">
+              {bookmark.url}
+            </a>
+          </div>
+
+          {bookmark.tags.length > 0 && (
+            <div class="meta-section">
+              <h2>Tags</h2>
+              <div class="tags">
+                {bookmark.tags.map((tag) => (
+                  <a href={`/tags/${tag}`} class="tag-chip">{tag}</a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div class="meta-section">
+            <h2>Category</h2>
+            <nav class="category-breadcrumb">
+              {bookmark.categoryPath.map((segment, i) => (
+                <>
+                  {i > 0 && <span class="separator"> / </span>}
+                  <a href={`/category/${bookmark.categoryPath.slice(0, i + 1).join("/")}`}>
+                    {segment}
+                  </a>
+                </>
+              ))}
+            </nav>
+          </div>
+
+          <div class="meta-section">
+            <h2>Source</h2>
+            <code class="source-path">{bookmark.sourceRelativePath}</code>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  .detail-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .detail-layout {
+      grid-template-columns: 1fr 220px;
+      gap: 3rem;
+    }
+  }
+
+  .content-column h1 {
+    margin-top: 0;
+  }
+
+  .description {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .metadata-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .meta-section h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.4rem;
+  }
+
+  .meta-section p,
+  .meta-section a {
+    margin: 0;
+    font-size: 0.95rem;
+    word-break: break-all;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tag-chip {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+
+  .category-breadcrumb a {
+    text-decoration: none;
+  }
+
+  .category-breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .source-path {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+</style>

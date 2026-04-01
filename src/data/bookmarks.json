@@ -1,0 +1,3122 @@
+[
+  {
+    "title": "AlphaXiv",
+    "url": "https://www.alphaxiv.org",
+    "description": "Open-access preprint repository for biological sciences",
+    "tags": [
+      "academic",
+      "journal",
+      "preprint"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "journals"
+    ],
+    "slug": "alpha-xiv",
+    "sourceRelativePath": "academic/journals/alpha-xiv.md"
+  },
+  {
+    "title": "Distill.pub",
+    "url": "https://distill.pub",
+    "description": "Machine learning research journal with interactive articles",
+    "tags": [
+      "academic",
+      "journal",
+      "machine-learning",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "journals"
+    ],
+    "slug": "distill-pub",
+    "sourceRelativePath": "academic/journals/distill-pub.md"
+  },
+  {
+    "title": "NeuroHive",
+    "url": "https://neurohive.io/ru/",
+    "description": "Russian neuroscience news and articles",
+    "tags": [
+      "academic",
+      "journal",
+      "neuroscience",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "journals"
+    ],
+    "slug": "neurohive",
+    "sourceRelativePath": "academic/journals/neurohive.md"
+  },
+  {
+    "title": "Quanta Magazine",
+    "url": "https://www.quantamagazine.org",
+    "description": "Science and mathematics news",
+    "tags": [
+      "academic",
+      "journal",
+      "science",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "journals"
+    ],
+    "slug": "quanta-magazine",
+    "sourceRelativePath": "academic/journals/quanta-magazine.md"
+  },
+  {
+    "title": "Science Alert",
+    "url": "https://www.sciencealert.com",
+    "description": "Science news and articles",
+    "tags": [
+      "academic",
+      "journal",
+      "science",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "journals"
+    ],
+    "slug": "science-alert",
+    "sourceRelativePath": "academic/journals/science-alert.md"
+  },
+  {
+    "title": "arXiv Sanity",
+    "url": "https://arxiv-sanity.org/",
+    "description": "Paper recommendation and search tool for arXiv",
+    "tags": [
+      "academic",
+      "publisher",
+      "preprint",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "publishers"
+    ],
+    "slug": "arxiv-sanity",
+    "sourceRelativePath": "academic/publishers/arxiv-sanity.md"
+  },
+  {
+    "title": "arXiv",
+    "url": "https://arxiv.org/",
+    "description": "Open-access preprint repository for physics, mathematics, computer science, and more",
+    "tags": [
+      "academic",
+      "publisher",
+      "preprint",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "publishers"
+    ],
+    "slug": "arxiv",
+    "sourceRelativePath": "academic/publishers/arxiv.md"
+  },
+  {
+    "title": "Google Scholar",
+    "url": "https://scholar.google.com/",
+    "description": "Academic search engine",
+    "tags": [
+      "academic",
+      "publisher",
+      "search",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "publishers"
+    ],
+    "slug": "google-scholar",
+    "sourceRelativePath": "academic/publishers/google-scholar.md"
+  },
+  {
+    "title": "Oxford Academic",
+    "url": "https://academic.oup.com",
+    "description": "Oxford University Press academic publishing platform",
+    "tags": [
+      "academic",
+      "publisher",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "publishers"
+    ],
+    "slug": "oxford-academic",
+    "sourceRelativePath": "academic/publishers/oxford-academic.md"
+  },
+  {
+    "title": "Academic Torrents",
+    "url": "https://academictorrents.com",
+    "description": "Distributed repository for research papers and datasets",
+    "tags": [
+      "academic",
+      "search",
+      "torrent",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "search"
+    ],
+    "slug": "academic-torrents",
+    "sourceRelativePath": "academic/search/academic-torrents.md"
+  },
+  {
+    "title": "Anna's Archive",
+    "url": "https://annas-archive.org",
+    "description": "Meta-search engine for shadow libraries and open-access content",
+    "tags": [
+      "academic",
+      "search",
+      "archive",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "search"
+    ],
+    "slug": "annas-archive",
+    "sourceRelativePath": "academic/search/annas-archive.md"
+  },
+  {
+    "title": "Papers with Code",
+    "url": "https://paperswithcode.com/",
+    "description": "Papers with code for machine learning research",
+    "tags": [
+      "academic",
+      "search",
+      "code",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "search"
+    ],
+    "slug": "papers-with-code",
+    "sourceRelativePath": "academic/search/papers-with-code.md"
+  },
+  {
+    "title": "PDF Drive",
+    "url": "https://www.pdfdrive.com",
+    "description": "Search engine for PDF files",
+    "tags": [
+      "academic",
+      "search",
+      "pdf",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "search"
+    ],
+    "slug": "pdfdrive",
+    "sourceRelativePath": "academic/search/pdfdrive.md"
+  },
+  {
+    "title": "turboseek",
+    "url": "https://www.turboseek.io",
+    "description": "Academic search engine",
+    "tags": [
+      "academic",
+      "search",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "search"
+    ],
+    "slug": "turboseek",
+    "sourceRelativePath": "academic/search/turboseek.md"
+  },
+  {
+    "title": "Z-Library",
+    "url": "https://z-library.cc",
+    "description": "Digital library for books and articles",
+    "tags": [
+      "academic",
+      "search",
+      "ebook",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "academic",
+      "search"
+    ],
+    "slug": "z-library",
+    "sourceRelativePath": "academic/search/z-library.md"
+  },
+  {
+    "title": "Context Engineering with ExoChat",
+    "url": "https://blog.rezvov.com/context-engineering-with-exochat-parsimony-in-action",
+    "tags": [],
+    "done": false,
+    "categoryPath": [],
+    "slug": "Context Engineering with ExoChat",
+    "sourceRelativePath": "Context Engineering with ExoChat.md"
+  },
+  {
+    "title": "Deploying OpenClaw",
+    "url": "https://blog.rezvov.com/deploying-openclaw-sixteen-incidents-one-day",
+    "tags": [],
+    "done": false,
+    "categoryPath": [],
+    "slug": "Deploying OpenClaw",
+    "sourceRelativePath": "Deploying OpenClaw.md"
+  },
+  {
+    "title": "Git Worktrees",
+    "url": "https://medium.com/@mabd.dev/git-worktrees-the-secret-weapon-for-running-multiple-ai-coding-agents-in-parallel-e9046451eb96",
+    "tags": [],
+    "done": false,
+    "categoryPath": [],
+    "slug": "Git Worktrees",
+    "sourceRelativePath": "Git Worktrees.md"
+  },
+  {
+    "title": "Linux ate my RAM",
+    "url": "https://www.linuxatemyram.com/",
+    "tags": [],
+    "done": false,
+    "categoryPath": [],
+    "slug": "linux-memory",
+    "sourceRelativePath": "linux-memory.md"
+  },
+  {
+    "title": "Living With an AI agent - My Full Setup After 2 Months",
+    "url": "https://x.com/witcheer/status/2037528582298194123",
+    "tags": [],
+    "done": false,
+    "categoryPath": [],
+    "slug": "Living with an AI agent",
+    "sourceRelativePath": "Living with an AI agent.md"
+  },
+  {
+    "title": "LLMs Changed the Rules",
+    "url": "https://blog.rezvov.com/llms-changed-the-rules-git-sql-rust-for-everyone",
+    "tags": [],
+    "done": false,
+    "categoryPath": [],
+    "slug": "LLMs Changed the Rules",
+    "sourceRelativePath": "LLMs Changed the Rules.md"
+  },
+  {
+    "title": "Free TV IPTV",
+    "url": "https://github.com/Free-TV/IPTV",
+    "description": "Collection of publicly available IPTV channels",
+    "tags": [
+      "tool",
+      "self-hosted",
+      "media",
+      "iptv"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "media"
+    ],
+    "slug": "free-tv-iptv",
+    "sourceRelativePath": "self-hosted/media/free-tv-iptv.md"
+  },
+  {
+    "title": "Lidarr",
+    "url": "https://lidarr.audio",
+    "description": "Music collection manager for Usenet and BitTorrent users",
+    "tags": [
+      "self-hosted",
+      "media",
+      "music",
+      "from-self-hostable"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "media"
+    ],
+    "slug": "lidarr",
+    "sourceRelativePath": "self-hosted/media/lidarr.md"
+  },
+  {
+    "title": "Open TV",
+    "url": "https://github.com/Fredolx/open-tv",
+    "description": "Open source TV streaming solution",
+    "tags": [
+      "tool",
+      "self-hosted",
+      "media"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "media"
+    ],
+    "slug": "open-tv",
+    "sourceRelativePath": "self-hosted/media/open-tv.md"
+  },
+  {
+    "title": "Pinchflat",
+    "url": "https://github.com/kieraneglin/pinchflat",
+    "description": "Your next YouTube media manager",
+    "tags": [
+      "self-hosted",
+      "media",
+      "youtube",
+      "from-self-hostable"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "media"
+    ],
+    "slug": "pinchflat",
+    "sourceRelativePath": "self-hosted/media/pinchflat.md"
+  },
+  {
+    "title": "Sonarr",
+    "url": "https://sonarr.tv",
+    "description": "Internet PVR for Usenet and Torrents",
+    "tags": [
+      "self-hosted",
+      "media",
+      "from-self-hostable"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "media"
+    ],
+    "slug": "sonarr",
+    "sourceRelativePath": "self-hosted/media/sonarr.md"
+  },
+  {
+    "title": "Etherpad",
+    "url": "https://etherpad.org/",
+    "description": "Real-time collaborative document editing",
+    "tags": [
+      "self-hosted",
+      "productivity",
+      "collaboration"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "productivity"
+    ],
+    "slug": "etherpad",
+    "sourceRelativePath": "self-hosted/productivity/etherpad.md"
+  },
+  {
+    "title": "ERPNext",
+    "url": "https://github.com/frappe/erpnext",
+    "description": "Open Source ERP system for businesses",
+    "tags": [
+      "self-hosted",
+      "productivity",
+      "erp"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "productivity"
+    ],
+    "slug": "frappe-erpnext",
+    "sourceRelativePath": "self-hosted/productivity/frappe-erpnext.md"
+  },
+  {
+    "title": "n8n",
+    "url": "https://n8n.io",
+    "description": "AI-native workflow automation",
+    "tags": [
+      "self-hosted",
+      "workflow-automation",
+      "from-self-hostable"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "productivity"
+    ],
+    "slug": "n8n",
+    "sourceRelativePath": "self-hosted/productivity/n8n.md"
+  },
+  {
+    "title": "NocoDB",
+    "url": "https://www.nocodb.com",
+    "description": "Open Source Airtable Alternative",
+    "tags": [
+      "self-hosted",
+      "database",
+      "from-self-hostable"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "productivity"
+    ],
+    "slug": "nocodb",
+    "sourceRelativePath": "self-hosted/productivity/nocodb.md"
+  },
+  {
+    "title": "Plane",
+    "url": "https://plane.so",
+    "description": "Great project management software",
+    "tags": [
+      "self-hosted",
+      "productivity",
+      "project-management",
+      "from-self-hostable"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "productivity"
+    ],
+    "slug": "plane",
+    "sourceRelativePath": "self-hosted/productivity/plane.md"
+  },
+  {
+    "title": "Timetagger",
+    "url": "https://timetagger.app",
+    "description": "Open source time-tracker with an interactive user experience",
+    "tags": [
+      "self-hosted",
+      "time-tracking",
+      "from-self-hostable"
+    ],
+    "done": false,
+    "categoryPath": [
+      "self-hosted",
+      "time-tracking"
+    ],
+    "slug": "timetagger",
+    "sourceRelativePath": "self-hosted/time-tracking/timetagger.md"
+  },
+  {
+    "title": "nanogallery2",
+    "url": "https://nanogallery2.nanostudio.org/",
+    "description": "Photo gallery software",
+    "tags": [
+      "service",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "services"
+    ],
+    "slug": "nanogallery2",
+    "sourceRelativePath": "services/nanogallery2.md"
+  },
+  {
+    "title": "simplelogin",
+    "url": "https://app.simplelogin.io/dashboard/pricing",
+    "description": "Email alias service for privacy",
+    "tags": [
+      "service",
+      "privacy",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "services"
+    ],
+    "slug": "simplogin",
+    "sourceRelativePath": "services/simplogin.md"
+  },
+  {
+    "title": "voltagent.dev",
+    "url": "https://voltagent.dev/",
+    "tags": [
+      "service",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "services"
+    ],
+    "slug": "voltagent",
+    "sourceRelativePath": "services/voltagent.md"
+  },
+  {
+    "title": "wordtune",
+    "url": "https://wordtune.com/",
+    "description": "AI writing assistant",
+    "tags": [
+      "service",
+      "writing",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "services"
+    ],
+    "slug": "wordtune",
+    "sourceRelativePath": "services/wordtune.md"
+  },
+  {
+    "title": "Specification-Driven Development The Four Pillars",
+    "url": "https://blog.rezvov.com/specification-driven-development-four-pillars",
+    "tags": [],
+    "done": false,
+    "categoryPath": [],
+    "slug": "Specification-Driven Development The Four Pillars",
+    "sourceRelativePath": "Specification-Driven Development The Four Pillars.md"
+  },
+  {
+    "title": "AI Research Skills",
+    "url": "https://github.com/ai-research-skills/ai-research-skills",
+    "description": "Curated collection of AI research skills and techniques",
+    "tags": [
+      "tool",
+      "ai",
+      "research"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "ai-research-skills",
+    "sourceRelativePath": "tools/ai/ai-research-skills.md"
+  },
+  {
+    "title": "Argilla",
+    "url": "https://github.com/argilla-io/argilla",
+    "description": "Open-source data labeling platform for AI and NLP projects",
+    "tags": [
+      "tool",
+      "ai",
+      "nlp"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "argilla",
+    "sourceRelativePath": "tools/ai/argilla.md"
+  },
+  {
+    "title": "augmentcode",
+    "url": "https://www.augmentcode.com/",
+    "tags": [
+      "tool",
+      "ai",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "augmentcode",
+    "sourceRelativePath": "tools/ai/augmentcode.md"
+  },
+  {
+    "title": "Auto Research Claw",
+    "url": "https://github.com/auto-research/auto-research-claw",
+    "description": "Automated research tool powered by AI",
+    "tags": [
+      "tool",
+      "ai",
+      "research"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "auto-research-claw",
+    "sourceRelativePath": "tools/ai/auto-research-claw.md"
+  },
+  {
+    "title": "Awesome Codex Subagents",
+    "url": "https://github.com/codex-ai/awesome-codex-subagents",
+    "description": "Curated list of Codex subagent implementations",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "awesome-codex-subagents",
+    "sourceRelativePath": "tools/ai/awesome-codex-subagents.md"
+  },
+  {
+    "title": "awesome-llm-apps",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "description": "Collection of LLM-powered applications",
+    "tags": [
+      "tool",
+      "ai",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "awesome-llm-apps",
+    "sourceRelativePath": "tools/ai/awesome-llm-apps.md"
+  },
+  {
+    "title": "awesome-nlp",
+    "url": "https://github.com/keon/awesome-nlp",
+    "description": "List of NLP resources",
+    "tags": [
+      "tool",
+      "ai",
+      "nlp",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "awesome-nlp",
+    "sourceRelativePath": "tools/ai/awesome-nlp.md"
+  },
+  {
+    "title": "Awesome OpenClaw Use Cases",
+    "url": "https://github.com/openclaw-ai/awesome-openclaw-usecases",
+    "description": "Curated list of use cases for OpenClaw AI tool",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "awesome-openclaw-usecases",
+    "sourceRelativePath": "tools/ai/awesome-openclaw-usecases.md"
+  },
+  {
+    "title": "Awesome Spatial Intelligence in VLM",
+    "url": "https://github.com/mll-lab-nu/Awesome-Spatial-Intelligence-in-VLM",
+    "description": "Curated list of spatial intelligence research in Vision Language Models",
+    "tags": [
+      "tool",
+      "ai",
+      "research"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "awesome-spatial-intelligence-vlm",
+    "sourceRelativePath": "tools/ai/awesome-spatial-intelligence-vlm.md"
+  },
+  {
+    "title": "Bedtime Story AI",
+    "url": "https://www.bedtimestory.ai/",
+    "tags": [
+      "tool",
+      "ai",
+      "chat",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "bedtimestory-ai",
+    "sourceRelativePath": "tools/ai/bedtimestory-ai.md"
+  },
+  {
+    "title": "BlenderGPT",
+    "url": "https://www.blendergpt.org",
+    "tags": [
+      "tool",
+      "ai",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "blendergpt",
+    "sourceRelativePath": "tools/ai/blendergpt.md"
+  },
+  {
+    "title": "ChatPDF",
+    "url": "https://www.chatpdf.com/",
+    "tags": [
+      "tool",
+      "ai",
+      "chat-with-documents",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "chatpdf",
+    "sourceRelativePath": "tools/ai/chatpdf.md"
+  },
+  {
+    "title": "ClawRouter",
+    "url": "https://github.com/clawrouter/clawrouter",
+    "description": "AI routing and orchestration tool",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "clawrouter",
+    "sourceRelativePath": "tools/ai/clawrouter.md"
+  },
+  {
+    "title": "crawl4ai",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "tags": [
+      "tool",
+      "ai",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "crawl4ai",
+    "sourceRelativePath": "tools/ai/crawl4ai.md"
+  },
+  {
+    "title": "Cursor Agent Best Practices",
+    "url": "https://www.cursor.com/how-to-use-agent",
+    "description": "Official guide for using Cursor AI agent effectively",
+    "tags": [
+      "tool",
+      "ai",
+      "cursor"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "cursor-agent-best-practices",
+    "sourceRelativePath": "tools/ai/cursor-agent-best-practices.md"
+  },
+  {
+    "title": "dmux",
+    "url": "https://dmux.ai/#getting-started",
+    "tags": [
+      "tool",
+      "ai",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "dmux",
+    "sourceRelativePath": "tools/ai/dmux.md"
+  },
+  {
+    "title": "Gemini",
+    "url": "https://gemini.google.com/app",
+    "tags": [
+      "tool",
+      "ai",
+      "chat",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "gemini",
+    "sourceRelativePath": "tools/ai/gemini.md"
+  },
+  {
+    "title": "Generative AI Project",
+    "url": "https://github.com/HeyNina101/generative_ai_project",
+    "description": "Collection of generative AI experiments and projects",
+    "tags": [
+      "tool",
+      "ai",
+      "research"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "generative-ai-project",
+    "sourceRelativePath": "tools/ai/generative-ai-project.md"
+  },
+  {
+    "title": "goose ai",
+    "url": "https://goose.ai",
+    "description": "AI assistant",
+    "tags": [
+      "tool",
+      "ai",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "goose-ai",
+    "sourceRelativePath": "tools/ai/goose-ai.md"
+  },
+  {
+    "title": "GPT4All",
+    "url": "https://www.nomic.ai/gpt4all",
+    "tags": [
+      "tool",
+      "ai",
+      "chat",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "gpt4all",
+    "sourceRelativePath": "tools/ai/gpt4all.md"
+  },
+  {
+    "title": "HeyGPT",
+    "url": "https://heygpt.chat",
+    "description": "Chat with GPT (so-so quality)",
+    "tags": [
+      "tool",
+      "ai",
+      "chat",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "heygpt-chat",
+    "sourceRelativePath": "tools/ai/heygpt-chat.md"
+  },
+  {
+    "title": "iCraft",
+    "url": "https://github.com/gantFDT/icraft",
+    "description": "AI tool for crafting and generating content",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "icraft",
+    "sourceRelativePath": "tools/ai/icraft.md"
+  },
+  {
+    "title": "Jenni AI",
+    "url": "https://jenni.ai",
+    "description": "AI-powered writing assistant",
+    "tags": [
+      "tool",
+      "ai",
+      "writing",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "jenni-ai",
+    "sourceRelativePath": "tools/ai/jenni-ai.md"
+  },
+  {
+    "title": "Llama OCR",
+    "url": "https://llamaocr.com/",
+    "description": "OCR tool powered by LLMs",
+    "tags": [
+      "tool",
+      "ai",
+      "ocr"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "llama-ocr",
+    "sourceRelativePath": "tools/ai/llama-ocr.md"
+  },
+  {
+    "title": "llmfit",
+    "url": "https://github.com/AlexsJones/llmfit",
+    "tags": [
+      "tool",
+      "ai",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "llmfit",
+    "sourceRelativePath": "tools/ai/llmfit.md"
+  },
+  {
+    "title": "MinerU",
+    "url": "https://github.com/opendatalab/MinerU",
+    "description": "Open-source document intelligence tool for extracting content from PDFs",
+    "tags": [
+      "tool",
+      "ai",
+      "document-processing"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "mineru",
+    "sourceRelativePath": "tools/ai/mineru.md"
+  },
+  {
+    "title": "nlp-datasets",
+    "url": "https://github.com/niderhoff/nlp-datasets",
+    "description": "List of NLP datasets",
+    "tags": [
+      "tool",
+      "ai",
+      "nlp",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "nlp-datasets",
+    "sourceRelativePath": "tools/ai/nlp-datasets.md"
+  },
+  {
+    "title": "NotebookLM",
+    "url": "https://notebooklm.google.com/notebook/b19cfd63-3faf-463b-8a87-b7b682108c16",
+    "description": "AI-powered research and writing assistant",
+    "tags": [
+      "tool",
+      "ai",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "notebooklm",
+    "sourceRelativePath": "tools/ai/notebooklm.md"
+  },
+  {
+    "title": "ObservableHQ",
+    "url": "https://observablehq.com",
+    "description": "Interactive data visualization platform",
+    "tags": [
+      "tool",
+      "ai",
+      "visualization",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "observablehq",
+    "sourceRelativePath": "tools/ai/observablehq.md"
+  },
+  {
+    "title": "Open Viking",
+    "url": "https://open.viking.cloud",
+    "description": "Open source AI tool for data processing",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "open-viking",
+    "sourceRelativePath": "tools/ai/open-viking.md"
+  },
+  {
+    "title": "OpenMAIC",
+    "url": "https://github.com/THU-MAIC/OpenMAIC",
+    "description": "Open-source AI collaboration framework from Tsinghua University",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "openmaic",
+    "sourceRelativePath": "tools/ai/openmaic.md"
+  },
+  {
+    "title": "OSF",
+    "url": "https://osf.io/",
+    "description": "Open Science Framework - free and open source project management tool",
+    "tags": [
+      "tool",
+      "ai",
+      "creation",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "osf",
+    "sourceRelativePath": "tools/ai/osf.md"
+  },
+  {
+    "title": "Paperspace",
+    "url": "https://www.paperspace.com",
+    "description": "GPU-accelerated computing platform for AI development",
+    "tags": [
+      "tool",
+      "ai",
+      "creation",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "paperspace",
+    "sourceRelativePath": "tools/ai/paperspace.md"
+  },
+  {
+    "title": "Perplexity AI",
+    "url": "https://www.perplexity.ai",
+    "tags": [
+      "tool",
+      "ai",
+      "chat",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "perplexity-ai",
+    "sourceRelativePath": "tools/ai/perplexity-ai.md"
+  },
+  {
+    "title": "Pretext",
+    "url": "https://github.com/chenglou/pretext",
+    "description": "AI text processing tool",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "pretext",
+    "sourceRelativePath": "tools/ai/pretext.md"
+  },
+  {
+    "title": "Ragie AI",
+    "url": "https://www.ragie.ai",
+    "tags": [
+      "tool",
+      "ai",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "ragie-ai",
+    "sourceRelativePath": "tools/ai/ragie-ai.md"
+  },
+  {
+    "title": "RISE",
+    "url": "https://rise.readthedocs.io/en/latest/",
+    "description": "Reveal.js - Interactive presentations from Jupyter notebooks",
+    "tags": [
+      "tool",
+      "ai",
+      "visualization",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "rise",
+    "sourceRelativePath": "tools/ai/rise.md"
+  },
+  {
+    "title": "RusVectōrēs",
+    "url": "https://rusvectores.org/ru/",
+    "description": "Semantic models for Russian language",
+    "tags": [
+      "tool",
+      "ai",
+      "nlp",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "rusvectors",
+    "sourceRelativePath": "tools/ai/rusvectors.md"
+  },
+  {
+    "title": "Scira AI",
+    "url": "https://scira.ai/",
+    "description": "AI-powered research and analysis tool",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "scira-ai",
+    "sourceRelativePath": "tools/ai/scira-ai.md"
+  },
+  {
+    "title": "Sim Studio",
+    "url": "https://github.com/simstudioai/sim",
+    "description": "AI simulation and modeling platform",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "sim-studio",
+    "sourceRelativePath": "tools/ai/sim-studio.md"
+  },
+  {
+    "title": "Supertonic 2",
+    "url": "https://huggingface.co/spaces/Supertone/supertonic-2",
+    "description": "AI-powered audio processing and generation tool",
+    "tags": [
+      "tool",
+      "ai",
+      "audio"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "supertonic-2",
+    "sourceRelativePath": "tools/ai/supertonic-2.md"
+  },
+  {
+    "title": "Swark",
+    "url": "https://github.com/irgolic/swark",
+    "description": "AI tool for automated workflow and task management",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "swark",
+    "sourceRelativePath": "tools/ai/swark.md"
+  },
+  {
+    "title": "The Lyt Kit",
+    "url": "https://drshahizan.gitbook.io/ai-tools/fundamentals/the-lyt-kit",
+    "description": "Learning tools and techniques",
+    "tags": [
+      "tool",
+      "ai",
+      "learning",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "the-lyt-kit",
+    "sourceRelativePath": "tools/ai/the-lyt-kit.md"
+  },
+  {
+    "title": "ToolFolio",
+    "url": "https://toolfolio.ai",
+    "description": "AI tool aggregator and portfolio",
+    "tags": [
+      "tool",
+      "ai"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "toolfolio",
+    "sourceRelativePath": "tools/ai/toolfolio.md"
+  },
+  {
+    "title": "Writefull",
+    "url": "https://my.writefull.com",
+    "description": "AI-powered academic writing tool",
+    "tags": [
+      "tool",
+      "ai",
+      "writing",
+      "from-research-tools"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ai"
+    ],
+    "slug": "writefull",
+    "sourceRelativePath": "tools/ai/writefull.md"
+  },
+  {
+    "title": "OpenReplay",
+    "url": "https://openreplay.com",
+    "description": "Open-source session replay and analytics platform (self-hosted)",
+    "tags": [
+      "tool",
+      "analytics",
+      "self-hosted"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "analytics"
+    ],
+    "slug": "openreplay",
+    "sourceRelativePath": "tools/analytics/openreplay.md"
+  },
+  {
+    "title": "Pad WS",
+    "url": "https://pad.ws",
+    "description": "Collaborative notepad and document editor",
+    "tags": [
+      "tool",
+      "collaboration"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "collaboration"
+    ],
+    "slug": "pad-ws",
+    "sourceRelativePath": "tools/collaboration/pad-ws.md"
+  },
+  {
+    "title": "Modern CSS",
+    "url": "https://moderncss.dev",
+    "description": "Modern CSS techniques and solutions for complex layout problems",
+    "tags": [
+      "tool",
+      "css",
+      "learning"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "css"
+    ],
+    "slug": "modern-css",
+    "sourceRelativePath": "tools/css/modern-css.md"
+  },
+  {
+    "title": "anti-slop Github action",
+    "url": "https://github.com/peakoss/anti-slop",
+    "description": "GitHub action to detect and remove low-quality AI-generated content",
+    "tags": [
+      "tool",
+      "development",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "anti-slop",
+    "sourceRelativePath": "tools/development/anti-slop.md"
+  },
+  {
+    "title": "BentoPDF",
+    "url": "https://github.com/alam00000/bentopdf",
+    "description": "PDF conversion and processing tool",
+    "tags": [
+      "tool",
+      "development",
+      "pdf"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "bentopdf",
+    "sourceRelativePath": "tools/development/bentopdf.md"
+  },
+  {
+    "title": "Camoufox",
+    "url": "https://github.com/daijro/camoufox",
+    "description": "Anti-detection web scraping browser automation tool",
+    "tags": [
+      "tool",
+      "development",
+      "browser-automation"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "camoufox",
+    "sourceRelativePath": "tools/development/camoufox.md"
+  },
+  {
+    "title": "carbone",
+    "url": "https://github.com/carboneio/carbone",
+    "description": "Report generation tool",
+    "tags": [
+      "tool",
+      "development",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "carbone",
+    "sourceRelativePath": "tools/development/carbone.md"
+  },
+  {
+    "title": "Cocoindex Code",
+    "url": "https://github.com/cocoindex-io/cocoindex-code",
+    "description": "Code search and indexing tool",
+    "tags": [
+      "tool",
+      "development"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "cocoindex-code",
+    "sourceRelativePath": "tools/development/cocoindex-code.md"
+  },
+  {
+    "title": "Diffs",
+    "url": "https://diffs.link",
+    "description": "Online diff and merge tool for code and text files",
+    "tags": [
+      "tool",
+      "development"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "diffs",
+    "sourceRelativePath": "tools/development/diffs.md"
+  },
+  {
+    "title": "Dolt",
+    "url": "https://www.doltdb.com",
+    "description": "Git for databases - version controlled SQL database",
+    "tags": [
+      "tool",
+      "development",
+      "database"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "dolt",
+    "sourceRelativePath": "tools/development/dolt.md"
+  },
+  {
+    "title": "GSD 2",
+    "url": "https://github.com/gsd-2/gsd-2",
+    "description": "Development workflow optimization tool",
+    "tags": [
+      "tool",
+      "development"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "gsd-2",
+    "sourceRelativePath": "tools/development/gsd-2.md"
+  },
+  {
+    "title": "JSON Render",
+    "url": "https://github.com/json-render/json-render",
+    "description": "Visual JSON viewer and renderer",
+    "tags": [
+      "tool",
+      "development",
+      "json"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "json-render",
+    "sourceRelativePath": "tools/development/json-render.md"
+  },
+  {
+    "title": "JSON Crack",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "description": "Visual JSON data editor and viewer",
+    "tags": [
+      "tool",
+      "development",
+      "json"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "jsoncrack",
+    "sourceRelativePath": "tools/development/jsoncrack.md"
+  },
+  {
+    "title": "MarkItDown",
+    "url": "https://github.com/microsoft/markitdown",
+    "description": "Microsoft's tool for converting various document formats to Markdown",
+    "tags": [
+      "tool",
+      "development",
+      "markdown"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "markitdown",
+    "sourceRelativePath": "tools/development/markitdown.md"
+  },
+  {
+    "title": "medium-unlocker",
+    "url": "https://github.com/inulute/medium-unlocker/",
+    "description": "Tool to unlock Medium articles",
+    "tags": [
+      "tool",
+      "development",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "medium-unlocker",
+    "sourceRelativePath": "tools/development/medium-unlocker.md"
+  },
+  {
+    "title": "PDF Diff",
+    "url": "https://github.com/yashpurhit/pdf-diff",
+    "description": "Tool for comparing PDF documents and highlighting differences",
+    "tags": [
+      "tool",
+      "development",
+      "pdf"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "pdf-diff",
+    "sourceRelativePath": "tools/development/pdf-diff.md"
+  },
+  {
+    "title": "React Doctor",
+    "url": "https://github.com/millionco/react-doctor",
+    "description": "React debugging and diagnostics tool",
+    "tags": [
+      "tool",
+      "development",
+      "react"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "react-doctor",
+    "sourceRelativePath": "tools/development/react-doctor.md"
+  },
+  {
+    "title": "Scrapegraph-ai",
+    "url": "https://github.com/ScrapeGraphAI/Scrapegraph-ai",
+    "description": "AI-powered web scraping",
+    "tags": [
+      "tool",
+      "development",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "scrapegraph-ai",
+    "sourceRelativePath": "tools/development/scrapegraph-ai.md"
+  },
+  {
+    "title": "SQLit",
+    "url": "https://github.com/Maxteabag/sqlit",
+    "description": "SQLite database management tool",
+    "tags": [
+      "tool",
+      "development",
+      "database"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "sqlit",
+    "sourceRelativePath": "tools/development/sqlit.md"
+  },
+  {
+    "title": "The Design System Guide",
+    "url": "https://thedesignsystem.guide/",
+    "description": "Comprehensive design system resources and guidelines",
+    "tags": [
+      "tool",
+      "development",
+      "design"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "the-design-system-guide",
+    "sourceRelativePath": "tools/development/the-design-system-guide.md"
+  },
+  {
+    "title": "xyops",
+    "url": "https://github.com/pixlcore/xyops",
+    "tags": [
+      "tool",
+      "development",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "xyops",
+    "sourceRelativePath": "tools/development/xyops.md"
+  },
+  {
+    "title": "Zalando RESTful API Guidelines",
+    "url": "https://opensource.zalando.com/restful-api-guidelines/",
+    "description": "Comprehensive API design guidelines and best practices",
+    "tags": [
+      "tool",
+      "development",
+      "api"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "zalando-restful-api-guidelines",
+    "sourceRelativePath": "tools/development/zalando-restful-api-guidelines.md"
+  },
+  {
+    "title": "Zalando Tech Radar",
+    "url": "https://github.com/zalando/tech-radar",
+    "description": "Technology radar for tracking and visualizing tech stack decisions",
+    "tags": [
+      "tool",
+      "development",
+      "technology"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "development"
+    ],
+    "slug": "zalando-tech-radar",
+    "sourceRelativePath": "tools/development/zalando-tech-radar.md"
+  },
+  {
+    "title": "Craft Mermaid",
+    "url": "https://craft.do/mermaid",
+    "description": "Create Mermaid diagrams in Craft.do documents",
+    "tags": [
+      "tool",
+      "diagrams",
+      "mermaid"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "diagrams"
+    ],
+    "slug": "craft-do-mermaid",
+    "sourceRelativePath": "tools/diagrams/craft-do-mermaid.md"
+  },
+  {
+    "title": "anubis.techaro.lol",
+    "url": "https://anubis.techaro.lol/?s=09",
+    "tags": [
+      "tool",
+      "general",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "general"
+    ],
+    "slug": "anubis-techaro-lol",
+    "sourceRelativePath": "tools/general/anubis-techaro-lol.md"
+  },
+  {
+    "title": "BetterPic",
+    "url": "https://www.betterpic.io/",
+    "description": "AI-powered image enhancement and processing",
+    "tags": [
+      "tool",
+      "general",
+      "image"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "general"
+    ],
+    "slug": "betterpic-io",
+    "sourceRelativePath": "tools/general/betterpic-io.md"
+  },
+  {
+    "title": "huntscreens.com/ru",
+    "url": "https://huntscreens.com/ru",
+    "description": "Screen sharing tool",
+    "tags": [
+      "tool",
+      "general",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "general"
+    ],
+    "slug": "huntscreens-com-ru",
+    "sourceRelativePath": "tools/general/huntscreens-com-ru.md"
+  },
+  {
+    "title": "malw.ru chatgpt",
+    "url": "https://malw.ru/pages/chatgpt",
+    "description": "Malware analysis related to ChatGPT",
+    "tags": [
+      "tool",
+      "general",
+      "security",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "general"
+    ],
+    "slug": "malw-ru-chatgpt",
+    "sourceRelativePath": "tools/general/malw-ru-chatgpt.md"
+  },
+  {
+    "title": "opensourceprojects.dev",
+    "url": "https://opensourceprojects.dev",
+    "description": "Open source projects directory",
+    "tags": [
+      "tool",
+      "general",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "general"
+    ],
+    "slug": "opensourceprojects-dev",
+    "sourceRelativePath": "tools/general/opensourceprojects-dev.md"
+  },
+  {
+    "title": "webrecorder",
+    "url": "https://webrecorder.net/",
+    "description": "Web archiving tool",
+    "tags": [
+      "tool",
+      "general",
+      "from-resources"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "general"
+    ],
+    "slug": "webrecorder",
+    "sourceRelativePath": "tools/general/webrecorder.md"
+  },
+  {
+    "title": "MapCN",
+    "url": "https://github.com/mapcn/mapcn",
+    "description": "China map visualization and analysis tool",
+    "tags": [
+      "tool",
+      "maps"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "maps"
+    ],
+    "slug": "mapcn",
+    "sourceRelativePath": "tools/maps/mapcn.md"
+  },
+  {
+    "title": "Valhalla",
+    "url": "https://github.com/valhalla/valhalla",
+    "description": "Open source routing engine and map data platform",
+    "tags": [
+      "tool",
+      "maps",
+      "routing"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "maps"
+    ],
+    "slug": "valhalla",
+    "sourceRelativePath": "tools/maps/valhalla.md"
+  },
+  {
+    "title": "Cobalt Tools",
+    "url": "https://cobalt.tools",
+    "description": "Media download tool for social platforms",
+    "tags": [
+      "tool",
+      "media",
+      "download"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "media"
+    ],
+    "slug": "cobalt-tools",
+    "sourceRelativePath": "tools/media/cobalt-tools.md"
+  },
+  {
+    "title": "LLPlayer",
+    "url": "https://llplayer.net",
+    "description": "Lightweight media player with advanced features",
+    "tags": [
+      "tool",
+      "media",
+      "player"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "media"
+    ],
+    "slug": "llplayer",
+    "sourceRelativePath": "tools/media/llplayer.md"
+  },
+  {
+    "title": "Craft",
+    "url": "https://craft.do",
+    "description": "Beautiful note-taking and document creation app",
+    "tags": [
+      "tool",
+      "productivity",
+      "notes"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "productivity"
+    ],
+    "slug": "craft-do",
+    "sourceRelativePath": "tools/productivity/craft-do.md"
+  },
+  {
+    "title": "Kill The Newsletter",
+    "url": "https://github.com/leafac/kill-the-newsletter",
+    "description": "Convert email newsletters to RSS feeds",
+    "tags": [
+      "tool",
+      "productivity",
+      "email"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "productivity"
+    ],
+    "slug": "kill-the-newsletter",
+    "sourceRelativePath": "tools/productivity/kill-the-newsletter.md"
+  },
+  {
+    "title": "SolidTime",
+    "url": "https://solidtime.io",
+    "description": "Time tracking and project management tool",
+    "tags": [
+      "tool",
+      "productivity",
+      "time-tracking"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "productivity"
+    ],
+    "slug": "solidtime",
+    "sourceRelativePath": "tools/productivity/solidtime.md"
+  },
+  {
+    "title": "BEADS Viewer",
+    "url": "https://github.com/Beats-XIV/beads-viewer",
+    "description": "Viewer for BEATS (Beamline for Energy Time of Flight Analysis) data",
+    "tags": [
+      "tool",
+      "science",
+      "visualization"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "science"
+    ],
+    "slug": "beads-viewer",
+    "sourceRelativePath": "tools/science/beads-viewer.md"
+  },
+  {
+    "title": "BEATS",
+    "url": "https://www.andor.cam.ac.uk/software/BEATS",
+    "description": "Beamline for Energy Time of Flight Analysis",
+    "tags": [
+      "tool",
+      "science",
+      "microscope"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "science"
+    ],
+    "slug": "beads",
+    "sourceRelativePath": "tools/science/beads.md"
+  },
+  {
+    "title": "How To Secure A Linux Server",
+    "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
+    "description": "Step-by-step guide to securing Linux servers",
+    "tags": [
+      "tool",
+      "security",
+      "linux"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "security"
+    ],
+    "slug": "how-to-secure-linux-server",
+    "sourceRelativePath": "tools/security/how-to-secure-linux-server.md"
+  },
+  {
+    "title": "SQL Injection Lab",
+    "url": "https://sql.injecti0n.xyz",
+    "description": "Interactive SQL injection learning platform",
+    "tags": [
+      "tool",
+      "security",
+      "learning"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "security"
+    ],
+    "slug": "sql-injection",
+    "sourceRelativePath": "tools/security/sql-injection.md"
+  },
+  {
+    "title": "Stack Auth",
+    "url": "https://stack-auth.com",
+    "description": "Open-source authentication solution",
+    "tags": [
+      "tool",
+      "security",
+      "authentication"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "security"
+    ],
+    "slug": "stack-auth",
+    "sourceRelativePath": "tools/security/stack-auth.md"
+  },
+  {
+    "title": "Terminal Trove",
+    "url": "https://terminaltrove.com",
+    "description": "Directory of terminal tools and utilities",
+    "tags": [
+      "tool",
+      "terminal"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "terminal"
+    ],
+    "slug": "terminal-trove",
+    "sourceRelativePath": "tools/terminal/terminal-trove.md"
+  },
+  {
+    "title": "ASCII Draw",
+    "url": "https://github.com/ascii-draw/ascii-draw",
+    "description": "Create ASCII art diagrams and drawings",
+    "tags": [
+      "tool",
+      "text",
+      "ascii"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "text"
+    ],
+    "slug": "ascii-draw",
+    "sourceRelativePath": "tools/text/ascii-draw.md"
+  },
+  {
+    "title": "Markdown New",
+    "url": "https://markdown.new",
+    "description": "Quick online markdown editor",
+    "tags": [
+      "tool",
+      "markdown"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "text"
+    ],
+    "slug": "markdown-new",
+    "sourceRelativePath": "tools/text/markdown-new.md"
+  },
+  {
+    "title": "Square UI",
+    "url": "https://squareui.click",
+    "description": "Modern UI component library and design system",
+    "tags": [
+      "tool",
+      "ui",
+      "design"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "ui"
+    ],
+    "slug": "square-ui",
+    "sourceRelativePath": "tools/ui/square-ui.md"
+  },
+  {
+    "title": "Remotion",
+    "url": "https://www.remotion.dev",
+    "description": "Create videos programmatically using React",
+    "tags": [
+      "tool",
+      "video",
+      "animation"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "video"
+    ],
+    "slug": "remotion",
+    "sourceRelativePath": "tools/video/remotion.md"
+  },
+  {
+    "title": "Terravision",
+    "url": "https://terravision.ge",
+    "description": "3D terrain and geographical visualization tool",
+    "tags": [
+      "tool",
+      "visualization"
+    ],
+    "done": false,
+    "categoryPath": [
+      "tools",
+      "visualization"
+    ],
+    "slug": "terravision",
+    "sourceRelativePath": "tools/visualization/terravision.md"
+  },
+  {
+    "title": "1337x",
+    "url": "https://www.1337x.tw",
+    "description": "Torrent search engine",
+    "tags": [
+      "torrent-tracker",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "1337x",
+    "sourceRelativePath": "torrent-trackers/1337x.md"
+  },
+  {
+    "title": "bt4gprx",
+    "url": "https://bt4gprx.com",
+    "description": "Torrent proxy and search",
+    "tags": [
+      "torrent-tracker",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "bt4gprx",
+    "sourceRelativePath": "torrent-trackers/bt4gprx.md"
+  },
+  {
+    "title": "cloudtorrents",
+    "url": "https://cloudtorrents.com",
+    "description": "Cloud-based torrent search",
+    "tags": [
+      "torrent-tracker",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "cloudtorrents",
+    "sourceRelativePath": "torrent-trackers/cloudtorrents.md"
+  },
+  {
+    "title": "EZTVx",
+    "url": "https://eztvx.to",
+    "description": "TV show torrent tracker",
+    "tags": [
+      "torrent-tracker",
+      "tv",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "eztvx",
+    "sourceRelativePath": "torrent-trackers/eztvx.md"
+  },
+  {
+    "title": "LimeTorrents",
+    "url": "https://limetorrents.so",
+    "description": "Torrent search engine",
+    "tags": [
+      "torrent-tracker",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "limetorrents",
+    "sourceRelativePath": "torrent-trackers/limetorrents.md"
+  },
+  {
+    "title": "NYAA.si",
+    "url": "https://nyaa.si",
+    "description": "Anime torrent tracker",
+    "tags": [
+      "torrent-tracker",
+      "anime",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "nyaa-si",
+    "sourceRelativePath": "torrent-trackers/nyaa-si.md"
+  },
+  {
+    "title": "The Pirate Bay",
+    "url": "https://thepiratebay.org/index.html",
+    "description": "Famous torrent tracker",
+    "tags": [
+      "torrent-tracker",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "the-pirate-bay",
+    "sourceRelativePath": "torrent-trackers/the-pirate-bay.md"
+  },
+  {
+    "title": "Torrent Downloads",
+    "url": "https://www.torrentdownloads.pro",
+    "description": "Torrent search engine",
+    "tags": [
+      "torrent-tracker",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "torrent-downloads",
+    "sourceRelativePath": "torrent-trackers/torrent-downloads.md"
+  },
+  {
+    "title": "TorrentGalaxy",
+    "url": "https://torrentgalaxy.to",
+    "description": "Torrent search engine",
+    "tags": [
+      "torrent-tracker",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "torrentgalaxy",
+    "sourceRelativePath": "torrent-trackers/torrentgalaxy.md"
+  },
+  {
+    "title": "ymovies.vip",
+    "url": "https://ww.ymovies.vip",
+    "description": "Movie streaming and download",
+    "tags": [
+      "torrent-tracker",
+      "movies",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "ymovies-vip",
+    "sourceRelativePath": "torrent-trackers/ymovies-vip.md"
+  },
+  {
+    "title": "YTS",
+    "url": "https://yts.mx/",
+    "description": "Movie torrent tracker",
+    "tags": [
+      "torrent-tracker",
+      "movies",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "torrent-trackers"
+    ],
+    "slug": "yts-mx",
+    "sourceRelativePath": "torrent-trackers/yts-mx.md"
+  },
+  {
+    "title": "1001 albums generator",
+    "url": "https://1001albumsgenerator.com/",
+    "description": "Generate random albums to listen to",
+    "tags": [
+      "website",
+      "entertainment",
+      "music",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "1001-albums-generator",
+    "sourceRelativePath": "websites/entertainment/1001-albums-generator.md"
+  },
+  {
+    "title": "Album of the year",
+    "url": "https://www.albumoftheyear.org/",
+    "description": "Music release tracker and aggregator",
+    "tags": [
+      "website",
+      "entertainment",
+      "music",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "album-of-the-year",
+    "sourceRelativePath": "websites/entertainment/album-of-the-year.md"
+  },
+  {
+    "title": "Alsopato",
+    "url": "https://alsopato.neocities.org/",
+    "description": "Neocities website with various content",
+    "tags": [
+      "website",
+      "entertainment",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "alsopato",
+    "sourceRelativePath": "websites/entertainment/alsopato.md"
+  },
+  {
+    "title": "Cari institute arena",
+    "url": "https://www.are.na/consumer-aesthetic",
+    "description": "Consumer aesthetic channel on Are.na",
+    "tags": [
+      "website",
+      "entertainment",
+      "aesthetics",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "arena-consumer-aesthetic",
+    "sourceRelativePath": "websites/entertainment/arena-consumer-aesthetic.md"
+  },
+  {
+    "title": "Cari institute aesthetics",
+    "url": "https://cari.institute/aesthetics",
+    "description": "Aesthetics database and research",
+    "tags": [
+      "website",
+      "entertainment",
+      "aesthetics",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "cari-institute-aesthetics",
+    "sourceRelativePath": "websites/entertainment/cari-institute-aesthetics.md"
+  },
+  {
+    "title": "com-x.life spider-man",
+    "url": "https://com-x.life/5586-spider-man-heroes-and-villains-collection-read.html",
+    "description": "Comic reader",
+    "tags": [
+      "website",
+      "entertainment",
+      "comics",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "com-x-life",
+    "sourceRelativePath": "websites/entertainment/com-x-life.md"
+  },
+  {
+    "title": "Every noise at once",
+    "url": "https://everynoise.com/engenremap.html",
+    "description": "Spotify music genre map",
+    "tags": [
+      "website",
+      "entertainment",
+      "music",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "every-noise-at-once",
+    "sourceRelativePath": "websites/entertainment/every-noise-at-once.md"
+  },
+  {
+    "title": "Film grab",
+    "url": "https://film-grab.com/",
+    "description": "Movie screenshots and stills",
+    "tags": [
+      "website",
+      "entertainment",
+      "movies",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "film-grab",
+    "sourceRelativePath": "websites/entertainment/film-grab.md"
+  },
+  {
+    "title": "Gam.Onl",
+    "url": "https://gam.onl/",
+    "description": "Online games",
+    "tags": [
+      "website",
+      "entertainment",
+      "games",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "gam-onl",
+    "sourceRelativePath": "websites/entertainment/gam-onl.md"
+  },
+  {
+    "title": "Ishkur's guide to electronic music",
+    "url": "https://music.ishkur.com/",
+    "description": "Electronic music guide and database",
+    "tags": [
+      "website",
+      "entertainment",
+      "music",
+      "reference",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "ishkurs-guide-electronic-music",
+    "sourceRelativePath": "websites/entertainment/ishkurs-guide-electronic-music.md"
+  },
+  {
+    "title": "Itatoys",
+    "url": "https://ita.toys/",
+    "description": "Italian toy database",
+    "tags": [
+      "website",
+      "entertainment",
+      "toys",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "ita-toys",
+    "sourceRelativePath": "websites/entertainment/ita-toys.md"
+  },
+  {
+    "title": "Lazy Records",
+    "url": "https://lazyrecords.app/global-feed",
+    "description": "Music social network",
+    "tags": [
+      "website",
+      "entertainment",
+      "music",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "lazy-records",
+    "sourceRelativePath": "websites/entertainment/lazy-records.md"
+  },
+  {
+    "title": "Letterboxd",
+    "url": "https://letterboxd.com",
+    "description": "Social network for film lovers",
+    "tags": [
+      "website",
+      "entertainment",
+      "movies",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "letterboxd",
+    "sourceRelativePath": "websites/entertainment/letterboxd.md"
+  },
+  {
+    "title": "Neal Fun",
+    "url": "https://neal.fun/",
+    "description": "Fun facts and interesting things",
+    "tags": [
+      "website",
+      "entertainment",
+      "fun",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "neal-fun",
+    "sourceRelativePath": "websites/entertainment/neal-fun.md"
+  },
+  {
+    "title": "NTS live",
+    "url": "https://www.nts.live/",
+    "description": "Internet radio station",
+    "tags": [
+      "website",
+      "entertainment",
+      "music",
+      "radio",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "nts-live",
+    "sourceRelativePath": "websites/entertainment/nts-live.md"
+  },
+  {
+    "title": "Radio garden",
+    "url": "https://radio.garden/",
+    "description": "Explore radio stations worldwide",
+    "tags": [
+      "website",
+      "entertainment",
+      "radio",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "radio-garden",
+    "sourceRelativePath": "websites/entertainment/radio-garden.md"
+  },
+  {
+    "title": "Rate your music",
+    "url": "https://rateyourmusic.com/",
+    "description": "Music database and review site",
+    "tags": [
+      "website",
+      "entertainment",
+      "music",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "rate-your-music",
+    "sourceRelativePath": "websites/entertainment/rate-your-music.md"
+  },
+  {
+    "title": "Retro TV",
+    "url": "https://70s.myretrotvs.com/#U1wvnJ22V1Q",
+    "description": "Watch retro TV shows",
+    "tags": [
+      "website",
+      "entertainment",
+      "retro",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "retro-tv",
+    "sourceRelativePath": "websites/entertainment/retro-tv.md"
+  },
+  {
+    "title": "Rotten Tomatoes",
+    "url": "https://www.rottentomatoes.com",
+    "description": "Movie and TV show reviews",
+    "tags": [
+      "website",
+      "entertainment",
+      "movies",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "rotten-tomatoes",
+    "sourceRelativePath": "websites/entertainment/rotten-tomatoes.md"
+  },
+  {
+    "title": "Sand spiel",
+    "url": "https://sandspiel.club/#]",
+    "description": "Falling sand game",
+    "tags": [
+      "website",
+      "entertainment",
+      "games",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "sand-spiel",
+    "sourceRelativePath": "websites/entertainment/sand-spiel.md"
+  },
+  {
+    "title": "TV Tropes",
+    "url": "https://tvtropes.org",
+    "description": "Trope directory for TV, film, and other media",
+    "tags": [
+      "website",
+      "entertainment",
+      "reference",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "tv-tropes",
+    "sourceRelativePath": "websites/entertainment/tv-tropes.md"
+  },
+  {
+    "title": "Type books",
+    "url": "https://www.typelit.io/",
+    "description": "Read books by typing",
+    "tags": [
+      "website",
+      "entertainment",
+      "books",
+      "reading",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "typelit",
+    "sourceRelativePath": "websites/entertainment/typelit.md"
+  },
+  {
+    "title": "Typing Race",
+    "url": "https://play.typeracer.com/",
+    "description": "Online typing competition",
+    "tags": [
+      "website",
+      "entertainment",
+      "typing",
+      "games",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "typeracer",
+    "sourceRelativePath": "websites/entertainment/typeracer.md"
+  },
+  {
+    "title": "Paint where you live",
+    "url": "https://wplace.live/",
+    "description": "Visualize data on a map",
+    "tags": [
+      "website",
+      "entertainment",
+      "mapping",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "entertainment"
+    ],
+    "slug": "wplace-live",
+    "sourceRelativePath": "websites/entertainment/wplace-live.md"
+  },
+  {
+    "title": "Open Source Jobs",
+    "url": "https://www.open-source-jobs.com",
+    "description": "Job board specifically for open source positions",
+    "tags": [
+      "website",
+      "jobs",
+      "open-source"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "jobs"
+    ],
+    "slug": "open-source-jobs",
+    "sourceRelativePath": "websites/jobs/open-source-jobs.md"
+  },
+  {
+    "title": "Open Alternative",
+    "url": "https://openalternative.co",
+    "description": "Directory of open source alternatives to proprietary software",
+    "tags": [
+      "website",
+      "alternatives"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites"
+    ],
+    "slug": "openalternative",
+    "sourceRelativePath": "websites/openalternative.md"
+  },
+  {
+    "title": "Restore Privacy",
+    "url": "https://restoreprivacy.com",
+    "description": "Privacy news and tools",
+    "tags": [
+      "website",
+      "privacy",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "privacy"
+    ],
+    "slug": "restore-privacy",
+    "sourceRelativePath": "websites/privacy/restore-privacy.md"
+  },
+  {
+    "title": "Falling Fruit",
+    "url": "https://fallingfruit.org/",
+    "description": "Urban foraging map",
+    "tags": [
+      "website",
+      "reference",
+      "mapping",
+      "food",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "falling-fruit",
+    "sourceRelativePath": "websites/reference/falling-fruit.md"
+  },
+  {
+    "title": "Flight Radar",
+    "url": "https://www.flightradar24.com",
+    "description": "Real-time flight tracking",
+    "tags": [
+      "website",
+      "reference",
+      "travel",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "flight-radar",
+    "sourceRelativePath": "websites/reference/flight-radar.md"
+  },
+  {
+    "title": "fs.blog",
+    "url": "https://fs.blog/",
+    "description": "Farnam Street - Making knowledge readable",
+    "tags": [
+      "website",
+      "reference",
+      "blog",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "fs-blog",
+    "sourceRelativePath": "websites/reference/fs-blog.md"
+  },
+  {
+    "title": "PCMag",
+    "url": "https://www.pcmag.com",
+    "description": "Technology product reviews",
+    "tags": [
+      "website",
+      "reference",
+      "technology",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "pcmag",
+    "sourceRelativePath": "websites/reference/pcmag.md"
+  },
+  {
+    "title": "ReadMedium",
+    "url": "https://readmedium.com",
+    "description": "Read Medium articles for free",
+    "tags": [
+      "website",
+      "reading",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "readmedium",
+    "sourceRelativePath": "websites/reference/readmedium.md"
+  },
+  {
+    "title": "Ribozone",
+    "url": "https://ribo.zone/",
+    "description": "RNA research database",
+    "tags": [
+      "website",
+      "reference",
+      "biology",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "ribozone",
+    "sourceRelativePath": "websites/reference/ribozone.md"
+  },
+  {
+    "title": "Rosetta Code",
+    "url": "https://rosettacode.org/wiki/Rosetta_Code",
+    "description": "Programming tasks and solutions in multiple languages",
+    "tags": [
+      "website",
+      "reference",
+      "programming",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "rosetta-code",
+    "sourceRelativePath": "websites/reference/rosetta-code.md"
+  },
+  {
+    "title": "swimm",
+    "url": "https://swimm.io",
+    "description": "Code documentation tool",
+    "tags": [
+      "website",
+      "reference",
+      "documentation",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "swimm",
+    "sourceRelativePath": "websites/reference/swimm.md"
+  },
+  {
+    "title": "Tana",
+    "url": "https://tana.inc/",
+    "description": "Building blocks for connected thinking",
+    "tags": [
+      "website",
+      "productivity",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "tana",
+    "sourceRelativePath": "websites/reference/tana.md"
+  },
+  {
+    "title": "TeamBlind",
+    "url": "https://www.teamblind.com",
+    "description": "Anonymous professional network",
+    "tags": [
+      "website",
+      "reference",
+      "career",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "teamblind",
+    "sourceRelativePath": "websites/reference/teamblind.md"
+  },
+  {
+    "title": "Wayne's word",
+    "url": "https://www.waynesword.net/",
+    "description": "Natural history and botany resource",
+    "tags": [
+      "website",
+      "reference",
+      "biology",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "waynes-word",
+    "sourceRelativePath": "websites/reference/waynes-word.md"
+  },
+  {
+    "title": "ZDNET",
+    "url": "https://www.zdnet.com",
+    "description": "Technology news and analysis",
+    "tags": [
+      "website",
+      "reference",
+      "news",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "reference"
+    ],
+    "slug": "zdnet",
+    "sourceRelativePath": "websites/reference/zdnet.md"
+  },
+  {
+    "title": "instant.io",
+    "url": "https://instant.io",
+    "description": "IPFS-based file sharing",
+    "tags": [
+      "website",
+      "search-engine",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "search-engines"
+    ],
+    "slug": "instant-io",
+    "sourceRelativePath": "websites/search-engines/instant-io.md"
+  },
+  {
+    "title": "old-search.marginalia.nu",
+    "url": "https://old-search.marginalia.nu/",
+    "description": "Old web search engine",
+    "tags": [
+      "website",
+      "search-engine",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "search-engines"
+    ],
+    "slug": "marginalia-nu",
+    "sourceRelativePath": "websites/search-engines/marginalia-nu.md"
+  },
+  {
+    "title": "Mojeek",
+    "url": "https://www.mojeek.com",
+    "description": "Privacy-focused search engine",
+    "tags": [
+      "website",
+      "search-engine",
+      "privacy",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "search-engines"
+    ],
+    "slug": "mojeek",
+    "sourceRelativePath": "websites/search-engines/mojeek.md"
+  },
+  {
+    "title": "searx.space",
+    "url": "https://searx.space",
+    "description": "Meta-search engine instance directory",
+    "tags": [
+      "website",
+      "search-engine",
+      "privacy",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "search-engines"
+    ],
+    "slug": "searx-space",
+    "sourceRelativePath": "websites/search-engines/searx-space.md"
+  },
+  {
+    "title": "webtor.io",
+    "url": "https://webtor.io/#/",
+    "description": "Torrent to stream converter",
+    "tags": [
+      "website",
+      "search-engine",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "search-engines"
+    ],
+    "slug": "webtor-io",
+    "sourceRelativePath": "websites/search-engines/webtor-io.md"
+  },
+  {
+    "title": "wiby.org",
+    "url": "https://wiby.org/about/",
+    "description": "Old web search engine",
+    "tags": [
+      "website",
+      "search-engine",
+      "from-websites"
+    ],
+    "done": false,
+    "categoryPath": [
+      "websites",
+      "search-engines"
+    ],
+    "slug": "wiby",
+    "sourceRelativePath": "websites/search-engines/wiby.md"
+  }
+]

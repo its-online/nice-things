@@ -3,8 +3,8 @@
 ## Summary
 Validated against the current environment:
 
-- `D:\Kirill\projects\my-online` is empty, so it can be used as the new repo root.
-- Source bookmarks exist at `D:\Kirill\notes\resources\bookmarks\marks`.
+- this directory is empty, so it can be used as the new repo root.
+- Source bookmarks exist at `../notes/resources/bookmarks/marks/`.
 - Current source shape is Markdown files with YAML frontmatter; sampled files are frontmatter-only.
 - `tags` may be empty, `bookmark_done` may be blank, and `articles/` contains extra `.png` files that must be ignored.
 - There are currently `194` Markdown bookmark files excluding `articles/`, and there are no basename slug collisions right now.
@@ -13,11 +13,11 @@ This plan is now implementation-ready with the missing decisions resolved:
 - Standardize on `bun` for scaffold, local dev, and build commands.
 - Use client-side static filtering/search on the homepage.
 - Keep `/b/[slug]` as a metadata-only detail page for v1.
-- Commit generated bookmark content into the Astro repo so Cloudflare Pages can build without access to `D:\Kirill\notes`.
+- Commit generated bookmark content into the Astro repo so Cloudflare Pages can build without access to notes directory.
 
 ## Key Changes
-- Initialize a new Astro site directly in `D:\Kirill\projects\my-online` using Bun.
-- Treat `D:\Kirill\notes\resources\bookmarks\marks` as local read-only input only; never require it during Cloudflare builds.
+- Initialize a new Astro site directly in current directory using Bun.
+- Treat notes directory as local read-only input only; never require it during Cloudflare builds.
 - Add a sync script in the Astro repo that:
   - Reads all `*.md` files under `marks`.
   - Excludes `marks/articles/**` entirely.

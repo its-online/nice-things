@@ -1,0 +1,800 @@
+---
+import bookmarks from "../data/bookmarks.json";
+import { getAllTags, getAllCategoryPaths } from "../lib/bookmarks/routes";
+import "../styles/shared.css";
+
+const allTags = getAllTags(bookmarks);
+const allCategories = getAllCategoryPaths(bookmarks);
+
+const groupedBookmarks = bookmarks
+  .slice()
+  .sort((a, b) => {
+    const catA = a.categoryPath.join("/");
+    const catB = b.categoryPath.join("/");
+    if (catA < catB) return -1;
+    if (catA > catB) return 1;
+    return a.title.localeCompare(b.title);
+  });
+
+const tagJson = JSON.stringify(allTags);
+const categoryPathsJson = JSON.stringify(allCategories);
+const groupedBookmarksJson = JSON.stringify(groupedBookmarks);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nice Things</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="page-title">Nice Things</h1>
+      
+      <div class="filter-control">
+        <div class="filter-select">
+          <div class="filter-search-wrapper">
+            <input 
+              type="search" 
+              id="search-input" 
+              placeholder="Search bookmarks..." 
+              autocomplete="off"
+            />
+          </div>
+          <select id="category-select" class="category-select">
+            <option value="">All Categories</option>
+            {allCategories.map((path) => (
+              <option value={path.join("/")}>{path.join(" / ")}</option>
+            ))}
+          </select>
+          <div class="filter-dropdown" id="filter-dropdown">
+            <div class="filter-section">
+              <span class="filter-section-label">Tags</span>
+              {allTags.map((tag) => (
+                <button class="filter-option" data-tag={tag}>{tag}</button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bookmark-container" id="bookmark-container">
+        <div class="selected-tag-display hidden" id="selected-tag-display">
+          <span class="selected-tag-icon">✓</span>
+          <span class="selected-tag-label">Selected:</span>
+          <span class="selected-tag-name" id="selected-tag-name"></span>
+        </div>
+        <ul class="bookmark-list" id="bookmark-list"></ul>
+        <div class="empty-state" id="empty-state" style="display: none;">
+          <p class="empty-message">No bookmarks match your search</p>
+          <button class="reset-button" id="reset-button">Reset filters</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="side-panel" id="side-panel">
+      <div class="side-panel-content">
+        <div class="side-panel-header">
+          <h2 class="side-panel-title" id="panel-title"></h2>
+          <button class="side-panel-close" id="panel-close" aria-label="Close panel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="side-panel-body">
+          <a href="#" class="side-panel-url" id="panel-url" target="_blank" rel="noopener noreferrer"></a>
+          <p class="side-panel-description" id="panel-description"></p>
+          <div class="side-panel-meta" id="panel-category"></div>
+          <div class="side-panel-tags" id="panel-tags"></div>
+          <a href="#" class="side-panel-visit-button" id="panel-visit-button" target="_blank" rel="noopener noreferrer">
+            Visit Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="preview-tooltip" id="preview-tooltip">
+      <div class="tooltip-title" id="tooltip-title"></div>
+      <div class="tooltip-url" id="tooltip-url"></div>
+      <div class="tooltip-tags" id="tooltip-tags"></div>
+    </div>
+
+    <script define:vars={{ tagJson, categoryPathsJson, groupedBookmarksJson }}>
+      const allTags = JSON.parse(tagJson);
+      const allCategoryPaths = JSON.parse(categoryPathsJson);
+      const groupedBookmarks = JSON.parse(groupedBookmarksJson);
+      
+      const searchInput = document.getElementById('search-input');
+      const categorySelect = document.getElementById('category-select');
+      const filterDropdown = document.getElementById('filter-dropdown');
+      const bookmarkList = document.getElementById('bookmark-list');
+      const emptyState = document.getElementById('empty-state');
+      const resetButton = document.getElementById('reset-button');
+      const sidePanel = document.getElementById('side-panel');
+      const panelClose = document.getElementById('panel-close');
+      const previewTooltip = document.getElementById('preview-tooltip');
+
+      let activeTag = '';
+      let activeCategory = '';
+      let searchQuery = '';
+      let debounceTimer = null;
+      let tooltipTimer = null;
+
+      function getUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          tag: params.get('tag') || '',
+          category: params.get('category') || '',
+          search: params.get('search') || ''
+        };
+      }
+
+      function setUrlParams(tag, category, search) {
+        const params = new URLSearchParams();
+        if (tag) params.set('tag', tag);
+        if (category) params.set('category', category);
+        if (search) params.set('search', search);
+        
+        const newUrl = params.toString() 
+          ? `${window.location.pathname}?${params.toString()}`
+          : window.location.pathname;
+        
+        history.replaceState(null, '', newUrl);
+      }
+
+      function filterBookmarks() {
+        const query = searchQuery.toLowerCase().trim();
+        
+        const filtered = groupedBookmarks.filter(bookmark => {
+          const matchesTag = !activeTag || bookmark.tags.includes(activeTag);
+          const matchesCategory = !activeCategory || 
+            bookmark.categoryPath.join("/") === activeCategory;
+          
+          const matchesSearch = !query || 
+            bookmark.title.toLowerCase().includes(query) ||
+            bookmark.url.toLowerCase().includes(query) ||
+            (bookmark.description && bookmark.description.toLowerCase().includes(query)) ||
+            bookmark.tags.some(tag => tag.toLowerCase().includes(query));
+          
+          return matchesTag && matchesCategory && matchesSearch;
+        });
+
+        renderBookmarks(filtered);
+      }
+
+      function groupByCategory(bookmarks) {
+        const groups = new Map();
+        for (const bookmark of bookmarks) {
+          const key = bookmark.categoryPath.join("/");
+          if (!groups.has(key)) {
+            groups.set(key, []);
+          }
+          groups.get(key).push(bookmark);
+        }
+        return groups;
+      }
+
+      function renderBookmarks(bookmarks) {
+        if (bookmarks.length === 0) {
+          bookmarkList.style.display = 'none';
+          emptyState.style.display = 'block';
+          return;
+        }
+
+        emptyState.style.display = 'none';
+        bookmarkList.style.display = 'flex';
+
+        const groups = groupByCategory(bookmarks);
+        let html = '';
+
+        for (const [categoryPath, items] of groups) {
+          const pathParts = categoryPath.split('/');
+          const categoryLabel = pathParts[pathParts.length - 1];
+          
+          html += `<li class="category-group">
+            <h2 class="category-heading">${categoryLabel}</h2>
+            <ul class="category-items">`;
+          
+          for (const bookmark of items) {
+            const truncatedUrl = bookmark.url.length > 50 
+              ? bookmark.url.substring(0, 50) + '...' 
+              : bookmark.url;
+            
+            html += `<li class="bookmark-item external" data-bookmark='${JSON.stringify(bookmark).replace(/'/g, "&#39;")}'>
+              <button class="bookmark-title-btn">${bookmark.title}</button>
+              <span class="bookmark-url-preview">${truncatedUrl}</span>
+            </li>`;
+          }
+          
+          html += `</ul></li>`;
+        }
+
+        bookmarkList.innerHTML = html;
+
+        document.querySelectorAll('.bookmark-item').forEach(item => {
+          item.addEventListener('mouseenter', showPreview);
+          item.addEventListener('mousemove', movePreview);
+          item.addEventListener('mouseleave', hidePreview);
+          item.addEventListener('click', handleBookmarkClick);
+        });
+      }
+
+      function showPreview(e) {
+        const bookmarkItem = e.currentTarget;
+        const bookmark = JSON.parse(bookmarkItem.dataset.bookmark.replace(/&#39;/g, "'"));
+        
+        clearTimeout(tooltipTimer);
+        tooltipTimer = setTimeout(() => {
+          const tooltipTitle = document.getElementById('tooltip-title');
+          const tooltipUrl = document.getElementById('tooltip-url');
+          const tooltipTags = document.getElementById('tooltip-tags');
+          
+          tooltipTitle.textContent = bookmark.title;
+          tooltipUrl.textContent = bookmark.url;
+          tooltipTags.innerHTML = bookmark.description || '';
+          
+          previewTooltip.style.display = 'block';
+          movePreview(e);
+        }, 200);
+      }
+
+      function movePreview(e) {
+        const x = e.clientX + 15;
+        const y = e.clientY + 15;
+        
+        const tooltipRect = previewTooltip.getBoundingClientRect();
+        const maxX = window.innerWidth - tooltipRect.width - 20;
+        const maxY = window.innerHeight - tooltipRect.height - 20;
+        
+        previewTooltip.style.left = Math.min(x, maxX) + 'px';
+        previewTooltip.style.top = Math.min(y, maxY) + 'px';
+      }
+
+      function hidePreview() {
+        clearTimeout(tooltipTimer);
+        previewTooltip.style.display = 'none';
+      }
+
+      function handleBookmarkClick(e) {
+        const bookmarkItem = e.currentTarget;
+        const bookmark = JSON.parse(bookmarkItem.dataset.bookmark.replace(/&#39;/g, "'"));
+        openPanel(bookmark);
+      }
+
+      function openPanel(bookmark) {
+        const panelTitle = document.getElementById('panel-title');
+        const panelUrl = document.getElementById('panel-url');
+        const panelDescription = document.getElementById('panel-description');
+        const panelCategory = document.getElementById('panel-category');
+        const panelTags = document.getElementById('panel-tags');
+        const panelVisitButton = document.getElementById('panel-visit-button');
+        
+        panelTitle.textContent = bookmark.title;
+        panelUrl.textContent = bookmark.url;
+        panelUrl.href = bookmark.url;
+        panelDescription.textContent = bookmark.description || '';
+        panelCategory.innerHTML = `<span class="meta-label">Category:</span> ${bookmark.categoryPath.join(' / ')}`;
+        panelTags.innerHTML = bookmark.tags.map(tag => `<span class="panel-tag">${tag}</span>`).join('');
+        panelVisitButton.href = bookmark.url;
+        
+        sidePanel.classList.add('active');
+        hidePreview();
+      }
+
+      function closePanel() {
+        sidePanel.classList.remove('active');
+      }
+
+      panelClose.addEventListener('click', closePanel);
+      
+      document.getElementById('bookmark-container').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('bookmark-container') || 
+            e.target === bookmarkList) {
+          closePanel();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closePanel();
+        }
+      });
+
+      function updateFilterOptions() {
+        const filterSection = filterDropdown.querySelector('.filter-section');
+        filterSection.innerHTML = `<span class="filter-section-label">Tags</span>`;
+        
+        const filteredTags = allTags.filter(tag => {
+          if (!searchQuery) return true;
+          return tag.toLowerCase().includes(searchQuery.toLowerCase());
+        });
+        
+        filteredTags.forEach(tag => {
+          const btn = document.createElement('button');
+          btn.className = 'filter-option' + (tag === activeTag ? ' active' : '');
+          btn.dataset.tag = tag;
+          btn.textContent = (tag === activeTag ? '✓ ' : '') + tag;
+          filterSection.appendChild(btn);
+        });
+
+        filterSection.querySelectorAll('.filter-option').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const tag = btn.dataset.tag;
+            activeTag = activeTag === tag ? '' : tag;
+            updateFilterOptions();
+            setUrlParams(activeTag, activeCategory, searchQuery);
+            filterBookmarks();
+          });
+        });
+
+        const selectedTagDisplay = document.getElementById('selected-tag-display');
+        const selectedTagName = document.getElementById('selected-tag-name');
+        if (activeTag) {
+          selectedTagName.textContent = activeTag;
+          selectedTagDisplay.classList.remove('hidden');
+        } else {
+          selectedTagDisplay.classList.add('hidden');
+        }
+      }
+
+      document.getElementById('selected-tag-display').addEventListener('click', () => {
+        activeTag = '';
+        updateFilterOptions();
+        setUrlParams('', activeCategory, searchQuery);
+        filterBookmarks();
+      });
+
+      function initFromUrl() {
+        const params = getUrlParams();
+        activeTag = params.tag;
+        activeCategory = params.category;
+        searchQuery = params.search;
+        
+        if (searchQuery) {
+          searchInput.value = searchQuery;
+        }
+        if (activeCategory) {
+          categorySelect.value = activeCategory;
+        }
+        
+        updateFilterOptions();
+        filterBookmarks();
+      }
+
+      searchInput.addEventListener('input', (e) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          searchQuery = e.target.value;
+          updateFilterOptions();
+          setUrlParams(activeTag, activeCategory, searchQuery);
+          filterBookmarks();
+        }, 150);
+      });
+
+      categorySelect.addEventListener('change', (e) => {
+        activeCategory = e.target.value;
+        setUrlParams(activeTag, activeCategory, searchQuery);
+        filterBookmarks();
+      });
+
+      resetButton.addEventListener('click', () => {
+        activeTag = '';
+        activeCategory = '';
+        searchQuery = '';
+        searchInput.value = '';
+        categorySelect.value = '';
+        updateFilterOptions();
+        setUrlParams('', '', '');
+        filterBookmarks();
+      });
+
+      initFromUrl();
+    </script>
+  </body>
+</html>
+
+<style>
+  .filter-control {
+    margin-bottom: 2rem;
+  }
+
+  .filter-select {
+    position: relative;
+  }
+
+  .filter-search-wrapper input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: var(--font-serif);
+    border: 1px solid var(--color-border);
+    border-radius: 8px 8px 0 0;
+    background: var(--color-bg-input);
+    color: var(--color-text);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .filter-search-wrapper input:focus {
+    border-color: var(--color-accent);
+  }
+
+  .filter-search-wrapper input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .category-select {
+    width: 100%;
+    padding: 0.6rem 2.5rem 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-family: var(--font-serif);
+    border: 1px solid var(--color-border);
+    border-top: none;
+    border-radius: 0;
+    background: var(--color-bg-input);
+    color: var(--color-text);
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23e8e0d5' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+  }
+
+  .category-select:focus {
+    border-color: var(--color-accent);
+  }
+
+  .filter-dropdown {
+    border: 1px solid var(--color-border);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    background: var(--color-bg-elevated);
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+  }
+
+  .filter-select:focus-within .filter-dropdown {
+    display: block;
+  }
+
+  .filter-section {
+    padding: 0.75rem;
+  }
+
+  .filter-section-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .filter-option {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    margin: 0.25rem;
+    font-size: 0.85rem;
+    font-family: var(--font-serif);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .filter-option:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .filter-option.active {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border-color: var(--color-accent);
+  }
+
+  .bookmark-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .category-group {
+    margin: 0;
+    padding: 0;
+  }
+
+  .category-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    text-transform: capitalize;
+  }
+
+  .category-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .bookmark-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.15s;
+  }
+
+  .bookmark-item:hover {
+    background: var(--color-bg-elevated);
+  }
+
+  .bookmark-title-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-family: var(--font-serif);
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+  }
+
+  .bookmark-title-btn:hover {
+    text-decoration: underline;
+  }
+
+  .bookmark-url-preview {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    word-break: break-all;
+  }
+
+  .selected-tag-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-accent);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .selected-tag-display:hover {
+    background: var(--color-accent);
+  }
+
+  .selected-tag-display:hover .selected-tag-icon,
+  .selected-tag-display:hover .selected-tag-label,
+  .selected-tag-display:hover .selected-tag-name {
+    color: var(--color-bg);
+  }
+
+  .selected-tag-display.hidden {
+    display: none;
+  }
+
+  .selected-tag-icon {
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  .selected-tag-label {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+
+  .selected-tag-name {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-family: var(--font-serif);
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .empty-message {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin: 0 0 1.5rem;
+  }
+
+  .reset-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+    font-family: var(--font-serif);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-bg-elevated);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .reset-button:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .side-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    max-width: 100%;
+    height: 100vh;
+    background: var(--color-bg-elevated);
+    border-left: 1px solid var(--color-border);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .side-panel.active {
+    transform: translateX(0);
+  }
+
+  .side-panel-content {
+    padding: 2rem;
+  }
+
+  .side-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .side-panel-title {
+    font-size: 1.4rem;
+    margin: 0;
+    padding-right: 1rem;
+    color: var(--color-text);
+  }
+
+  .side-panel-close {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 0.25rem;
+    line-height: 1;
+  }
+
+  .side-panel-close:hover {
+    color: var(--color-text);
+  }
+
+  .side-panel-url {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    word-break: break-all;
+    text-decoration: none;
+  }
+
+  .side-panel-url:hover {
+    text-decoration: underline;
+  }
+
+  .side-panel-description {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin: 0 0 1.5rem;
+    line-height: 1.6;
+  }
+
+  .side-panel-meta {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+  }
+
+  .side-panel-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .panel-tag {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text-muted);
+  }
+
+  .side-panel-visit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.15s;
+  }
+
+  .side-panel-visit-button:hover {
+    background: var(--color-accent-hover);
+  }
+
+  .preview-tooltip {
+    position: fixed;
+    display: none;
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    max-width: 300px;
+    z-index: 900;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .tooltip-title {
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 0.25rem;
+  }
+
+  .tooltip-url {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    word-break: break-all;
+    margin-bottom: 0.5rem;
+  }
+
+  .tooltip-tags {
+    font-size: 0.85rem;
+    color: var(--color-text);
+    line-height: 1.4;
+  }
+</style>
