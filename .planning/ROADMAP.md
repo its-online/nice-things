@@ -4,6 +4,7 @@
 
 - ✅ **v1.0 MVP** - Phases 1-4 (shipped 2026-04-01)
 - ✅ **v1.1 UI/UX Refinement** - Phase 5 (shipped 2026-04-01)
+- 🔄 **v1.2 Tag Selection Fixes** - Phase 6 (in progress)
 - 📋 **v2.0 [TBD]** - Planned
 
 ## Phases
@@ -90,6 +91,23 @@ Plans:
 
 </details>
 
+---
+
+### Phase 6: Tag Selection Fixes & UI Cleanup
+**Goal**: Fix tag selection interaction bugs and remove external link icon per user feedback.
+**Depends on**: Phase 5
+**Requirements**: TAG-01, TAG-02, TAG-03, PREVIEW-01, CLEANUP-01
+**Success Criteria** (what must be TRUE):
+  1. When a tag is selected in the dropdown, it displays with visually distinct styling (different color, weight, or indicator) compared to unselected tags.
+  2. Selecting a tag in the dropdown control updates the tag display shown in the preview area to match.
+  3. Selecting a tag in the preview area updates the dropdown control to reflect the selected tag.
+  4. Preview area displays bookmark description text instead of showing a list of tags.
+  5. External link icon is no longer rendered anywhere in the bookmark display UI.
+**Plans**: TBD
+**UI hint**: yes
+
+---
+
 ### 📋 v2.0 [TBD] (Planned)
 
 **Milestone Goal:** [To be determined]
@@ -103,3 +121,4 @@ Plans:
 | 3. Homepage Retrieval UX | v1.0 | 1/1 | Complete | 2026-04-01 |
 | 4. Deployable Static Release | v1.0 | 1/1 | Complete | 2026-04-01 |
 | 5. UI/UX Refinement | v1.1 | 1/1 | Complete | 2026-04-01 |
+| 6. Tag Selection Fixes & UI Cleanup | v1.2 | 0/1 | Not started | - |

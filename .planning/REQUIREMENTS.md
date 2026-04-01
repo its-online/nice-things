@@ -126,6 +126,8 @@ Tag selection fixes and UI cleanup (v1.1 shipped: 2026-04-01)
 
 ## Traceability
 
+### v1.2 Coverage
+
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | TAG-01 | Phase 6 | Pending |
@@ -136,9 +138,9 @@ Tag selection fixes and UI cleanup (v1.1 shipped: 2026-04-01)
 
 **Coverage:**
 - v1.2 requirements: 5 total
-- Mapped to phases: 5
+- Mapped to phases: 5 (Phase 6)
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-31*
-*Last updated: 2026-04-01 after v1.2 milestone start*
+*Last updated: 2026-04-01 after v1.2 roadmap created*
