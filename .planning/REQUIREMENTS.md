@@ -61,4 +61,4 @@ Simplification milestone — remove dedicated route pages (v1.2 shipped: 2026-04
 
 ---
 *Requirements defined: 2026-03-31*
-*Last updated: 2026-04-01 after v1.3 milestone start*
+*Last updated: 2026-04-01 — v1.3 roadmap created (Phase 7: Route Cleanup)*

@@ -1,12 +1,12 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.2
-milestone_name: "Tag Selection Fixes"
-status: milestone complete
-stopped_at: Milestone v1.2 shipped
-last_updated: "2026-04-01T11:40:00.000Z"
+milestone: v1.3
+milestone_name: "Simplification"
+status: milestone started
+stopped_at: Starting milestone v1.3
+last_updated: "2026-04-01T12:58:00.000Z"
 progress:
-  total_phases: 6
+  total_phases: 7
   completed_phases: 6
   total_plans: 6
   completed_plans: 6
@@ -19,14 +19,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-01)
 
 **Core value:** Saved links must be easy to sync from notes and fast to find again through simple browsing and filtering.
-**Current focus:** Milestone v1.2 complete
+**Current focus:** Milestone v1.3 — Simplification
 
 ## Current Position
 
-Phase: All phases complete
+Phase: Not started (defining requirements)
 Plan: —
-Status: v1.2 milestone complete
-Last activity: 2026-04-01 — Milestone v1.2 shipped
+Status: Defining requirements
+Last activity: 2026-04-01 — Milestone v1.3 started
 
 ## Milestone History
 
@@ -35,6 +35,7 @@ Last activity: 2026-04-01 — Milestone v1.2 shipped
 | v1.0 | 2026-03-31 | Sync pipeline, 186 bookmarks, static routes, homepage search/filters, Cloudflare Pages deploy |
 | v1.1 | 2026-04-01 | Dark theme, side panel, integrated search, hover previews, external link icons |
 | v1.2 | 2026-04-01 | Selected tag distinct, dropdown/preview sync, description in preview, remove external icon |
+| v1.3 | In progress | Remove /b/, /tags/, /category/ pages |
 
 ## Accumulated Context
 
@@ -56,10 +57,11 @@ Last activity: 2026-04-01 — Milestone v1.2 shipped
 - v1.2: Dropdown and preview area tag selection synced
 - v1.2: Preview tooltip shows description
 - v1.2: External link icon removed
+- v1.3: Homepage-only navigation (remove /b/, /tags/, /category/ pages)
 
 ### Pending Todos
 
-None — v1.2 complete
+- v1.3: Remove dedicated route pages
 
 ### Blockers/Concerns
 
@@ -67,5 +69,5 @@ None
 
 ## Session Continuity
 
-Last session: 2026-04-01 11:40 +08
-Stopped at: Milestone v1.2 shipped
+Last session: 2026-04-01 12:58 +08
+Stopped at: Starting new milestone v1.3
