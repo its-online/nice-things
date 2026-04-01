@@ -24,14 +24,16 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 - ✓ Dropdown and preview area tag selection synced — v1.2 Phase 6
 - ✓ Preview show description instead of tags — v1.2 Phase 6
 - ✓ External link icon removed — v1.2 Phase 6
+- ✓ Remove `/b/[slug]` bookmark detail pages — v1.3 Phase 7
+- ✓ Remove `/tags/[tag]` tag listing pages — v1.3 Phase 7
+- ✓ Remove `/category/[...path]` category listing pages — v1.3 Phase 7
+- ✓ Build outputs only homepage — v1.3 Phase 7
 
 ### Active
 
-<!-- v1.3 Simplification -->
+<!-- v2.0 [TBD] -->
 
-- [ ] Remove `/b/[slug]` bookmark detail pages
-- [ ] Remove `/tags/[tag]` tag listing pages
-- [ ] Remove `/category/[...path]` category listing pages
+- [ ] [To be determined]
 
 ### Out of Scope
 
@@ -46,7 +48,7 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 - Source files are markdown with YAML frontmatter
 - `articles/` include extra `.png` files and must be excluded from sync
 - 186 bookmark records in committed dataset
-- Routes: `/` only (after v1.3)
+- Routes: `/` only
 - Deployed on Cloudflare Pages
 
 ## Constraints
@@ -70,7 +72,7 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 | Selected tag with checkmark indicator | Visual distinction for active filter | ✓ Good |
 | Description in preview tooltip | Better quick info than tags | ✓ Good |
 | External link icon removed | Cleaner UI per user feedback | ✓ Good |
-| Homepage-only navigation | Side panel + search provides all needed access | — Pending |
+| Homepage-only navigation | Side panel + search provides all needed access | ✓ Good |
 
 ## Evolution
 
@@ -90,4 +92,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-01 after v1.3 milestone start*
+*Last updated: 2026-04-01 after v1.3 milestone complete*

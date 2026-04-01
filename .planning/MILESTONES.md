@@ -1,5 +1,17 @@
 # Milestones
 
+## v1.3 Simplification (Shipped: 2026-04-01)
+
+**Phases completed:** 1 phase, 1 plan
+
+**Key accomplishments:**
+
+- Removed /b/, /tags/, /category/ dedicated pages
+- Build reduced from 324 pages to 1 page
+- All bookmarks accessible via homepage search/filter/side panel
+
+---
+
 ## v1.2 Tag Selection Fixes (Shipped: 2026-04-01)
 
 **Phases completed:** 1 phase, 1 plan, 8 tasks
@@ -8,7 +20,7 @@
 
 - Selected tag visually distinct with ✓ prefix
 - Dropdown and preview area tag selection synced
-- Preview tooltip shows description instead of tags
+- Preview tooltip show description instead of tags
 - External link icon removed from bookmark titles
 
 ---
