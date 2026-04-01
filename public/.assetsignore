@@ -1,1 +1,2 @@
-# Cloudflare Pages assets ignore
+_worker.js
+_routes.json
