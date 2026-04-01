@@ -9,10 +9,10 @@ Mobile friendliness milestone (v1.3 shipped: 2026-04-01)
 
 ### Mobile Layout
 
-- [ ] **MOBILE-01**: Side panel adapts or replaces on mobile screens
-- [ ] **MOBILE-02**: Touch targets (buttons, links) are easy to tap on mobile
-- [ ] **MOBILE-03**: No horizontal scroll on mobile
-- [ ] **MOBILE-04**: Dropdown/search controls work on mobile
+- [x] **MOBILE-01**: Side panel adapts or replaces on mobile screens
+- [x] **MOBILE-02**: Touch targets (buttons, links) are easy to tap on mobile
+- [x] **MOBILE-03**: No horizontal scroll on mobile
+- [x] **MOBILE-04**: Dropdown/search controls work on mobile
 
 ## v1.3 Requirements (Complete)
 
@@ -56,10 +56,10 @@ Mobile friendliness milestone (v1.3 shipped: 2026-04-01)
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| MOBILE-01 | Phase 8 | Pending |
-| MOBILE-02 | Phase 8 | Pending |
-| MOBILE-03 | Phase 8 | Pending |
-| MOBILE-04 | Phase 8 | Pending |
+| MOBILE-01 | Phase 8 | ✅ Complete |
+| MOBILE-02 | Phase 8 | ✅ Complete |
+| MOBILE-03 | Phase 8 | ✅ Complete |
+| MOBILE-04 | Phase 8 | ✅ Complete |
 
 **Coverage:**
 - v1.4 requirements: 4 total

@@ -1,5 +1,18 @@
 # Milestones
 
+## v1.4 Mobile Friendliness (Shipped: 2026-04-01)
+
+**Phases completed:** 1 phase, 1 plan
+
+**Key accomplishments:**
+
+- Side panel full-screen overlay on mobile (≤640px)
+- All touch targets minimum 48px height
+- Collapsible accordion filter for tag selection on mobile
+- Single breakpoint at 640px for mobile/desktop switch
+
+---
+
 ## v1.3 Simplification (Shipped: 2026-04-01)
 
 **Phases completed:** 1 phase, 1 plan
