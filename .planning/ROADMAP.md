@@ -6,7 +6,7 @@
 - ✅ **v1.1 UI/UX Refinement** — Phase 5 (shipped 2026-04-01)
 - ✅ **v1.2 Tag Selection Fixes** — Phase 6 (shipped 2026-04-01)
 - ✅ **v1.3 Simplification** — Phase 7 (shipped 2026-04-01)
-- 🚧 **v1.4 Mobile Friendliness** — Phase 8 (in progress)
+- ✅ **v1.4 Mobile Friendliness** — Phase 8 (shipped 2026-04-01)
 - 📋 **v2.0 [TBD]** — Planned
 
 ## Phase Details
@@ -20,7 +20,10 @@
   2. Touch targets (buttons, links) are easy to tap on mobile
   3. No horizontal scroll on mobile
   4. Dropdown/search controls work on mobile
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [x] 08-01: Mobile friendliness - CSS media query, touch targets, accordion filters
 
 ### Phase 7: Route Cleanup
 **Goal**: Site contains only homepage route with all bookmark access via search/filter/side panel
@@ -56,4 +59,4 @@ _Detailed milestone archives: `.planning/milestones/`_
 | 5. UI/UX Refinement | v1.1 | 1/1 | ✅ Complete | 2026-04-01 |
 | 6. Tag Selection Fixes | v1.2 | 1/1 | ✅ Complete | 2026-04-01 |
 | 7. Route Cleanup | v1.3 | 1/1 | ✅ Complete | 2026-04-01 |
-| 8. Mobile Friendliness | v1.4 | 0/? | Not started | - |
+| 8. Mobile Friendliness | v1.4 | 1/1 | ✅ Complete | 2026-04-01 |
