@@ -3,21 +3,30 @@
 **Defined:** 2026-03-31
 **Core Value:** Saved links must be easy to sync from notes and fast to find again through simple browsing and filtering.
 
-## v1.3 Requirements
+## v1.4 Requirements
 
-Simplification milestone — remove dedicated route pages (v1.2 shipped: 2026-04-01)
+Mobile friendliness milestone (v1.3 shipped: 2026-04-01)
+
+### Mobile Layout
+
+- [ ] **MOBILE-01**: Side panel adapts or replaces on mobile screens
+- [ ] **MOBILE-02**: Touch targets (buttons, links) are easy to tap on mobile
+- [ ] **MOBILE-03**: No horizontal scroll on mobile
+- [ ] **MOBILE-04**: Dropdown/search controls work on mobile
+
+## v1.3 Requirements (Complete)
 
 ### Route Cleanup
 
-- [ ] **CLEANUP-01**: `/b/[slug]` bookmark detail pages removed from site generation
-- [ ] **CLEANUP-02**: `/tags/[tag]` tag listing pages removed from site generation
-- [ ] **CLEANUP-03**: `/category/[...path]` category listing pages removed from site generation
-- [ ] **CLEANUP-04**: Build output contains only homepage (`/`) and static assets
+- [x] **CLEANUP-01**: `/b/[slug]` bookmark detail pages removed — Phase 7
+- [x] **CLEANUP-02**: `/tags/[tag]` tag listing pages removed — Phase 7
+- [x] **CLEANUP-03**: `/category/[...path]` category listing pages removed — Phase 7
+- [x] **CLEANUP-04**: Build output contains only homepage — Phase 7
 
 ### Verification
 
-- [ ] **VERIFY-01**: Site builds successfully with only homepage route
-- [ ] **VERIFY-02**: All 186 bookmarks accessible via homepage search/filter/side panel
+- [x] **VERIFY-01**: Site builds successfully — Phase 7
+- [x] **VERIFY-02**: All bookmarks accessible via homepage — Phase 7
 
 ## v2 Requirements
 
@@ -47,18 +56,16 @@ Simplification milestone — remove dedicated route pages (v1.2 shipped: 2026-04
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CLEANUP-01 | Phase 7 | Pending |
-| CLEANUP-02 | Phase 7 | Pending |
-| CLEANUP-03 | Phase 7 | Pending |
-| CLEANUP-04 | Phase 7 | Pending |
-| VERIFY-01 | Phase 7 | Pending |
-| VERIFY-02 | Phase 7 | Pending |
+| MOBILE-01 | Phase 8 | Pending |
+| MOBILE-02 | Phase 8 | Pending |
+| MOBILE-03 | Phase 8 | Pending |
+| MOBILE-04 | Phase 8 | Pending |
 
 **Coverage:**
-- v1.3 requirements: 6 total
-- Mapped to phases: 6 (Phase 7)
+- v1.4 requirements: 4 total
+- Mapped to phases: 4 (Phase 8)
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-31*
-*Last updated: 2026-04-01 — v1.3 roadmap created (Phase 7: Route Cleanup)*
+*Last updated: 2026-04-01 — v1.4 milestone started*
