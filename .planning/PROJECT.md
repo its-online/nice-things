@@ -20,20 +20,22 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 - ✓ Integrated search in dropdown — v1.1 Phase 5
 - ✓ Side panel for bookmark details — v1.1 Phase 5
 - ✓ External link visual distinction (icon + color) — v1.1 Phase 5
+- ✓ Selected tag visually distinct — v1.2 Phase 6
+- ✓ Dropdown and preview area tag selection synced — v1.2 Phase 6
+- ✓ Preview shows description instead of tags — v1.2 Phase 6
+- ✓ External link icon removed — v1.2 Phase 6
 
 ### Active
 
-<!-- v1.2 Tag Selection Fixes -->
+<!-- v2.0 [TBD] -->
 
-- [ ] Selected tag visually distinct from unselected
-- [ ] Dropdown tag selector synced with preview area
-- [ ] Preview shows description instead of tags
-- [ ] Remove external link icon from UI
+- [ ] [To be determined]
 
 ### Out of Scope
 
 - Server-side rendering — intentionally static for simpler deployment
 - Rendering bookmark markdown bodies — v1 uses frontmatter metadata only
+- Light theme toggle — dark theme is the primary experience
 
 ## Context
 
@@ -41,7 +43,8 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 - Source files are markdown with YAML frontmatter
 - `articles/` includes extra `.png` files and must be excluded from sync
 - 186 bookmark records in committed dataset
-- v1.1 routes: `/`, `/tags/[tag]`, `/category/[...path]`, `/b/[slug]`
+- Routes: `/`, `/tags/[tag]`, `/category/[...path]`, `/b/[slug]`
+- Deployed on Cloudflare Pages
 
 ## Constraints
 
@@ -53,7 +56,7 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
-|----------|-----------|--------|
+|----------|-----------|---------|
 | Use Bun for scaffold, local dev, and build commands | One consistent toolchain | ✓ Good |
 | Commit generated bookmark content into repo | Cloudflare Pages cannot access external notes | ✓ Good |
 | Prioritize fast archival lookup over feature breadth | Primary user need is finding links | ✓ Good |
@@ -61,8 +64,9 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 | Warm dark theme (#1a1614, #d4a574) | User preference | ✓ Good |
 | Remove tag pills, use dropdown only | Cleaner UI, less visual noise | ✓ Good |
 | Integrated search in dropdown | Single control for search + filter | ✓ Good |
-| Remove external link icon | Cleaner UI per user feedback | — Pending |
-| Sync dropdown with preview area tags | Fix tag selection interaction bug | — Pending |
+| Selected tag with checkmark indicator | Visual distinction for active filter | ✓ Good |
+| Description in preview tooltip | Better quick info than tags | ✓ Good |
+| External link icon removed | Cleaner UI per user feedback | ✓ Good |
 
 ## Evolution
 
@@ -82,4 +86,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-01 after v1.1 milestone complete*
+*Last updated: 2026-04-01 after v1.2 milestone complete*
