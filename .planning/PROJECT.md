@@ -31,16 +31,19 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 
 ### Active
 
-<!-- v2.0 [TBD] -->
+<!-- v1.4 Mobile Friendliness -->
 
-- [ ] [To be determined]
+- [ ] Side panel adapt or replace on mobile screens
+- [ ] Touch targets easy to tap on mobile
+- [ ] No horizontal scroll on mobile
+- [ ] Dropdown/search controls work on mobile
 
 ### Out of Scope
 
 - Server side rendering — intentionally static for simpler deployment
 - Rendering bookmark markdown bodies — v1 uses frontmatter metadata only
 - Light theme toggle — dark theme is the primary experience
-- Dedicated detail pages — side panel provides same info on main page
+- Dedicated detail pages — side panel provide same info on main page
 
 ## Context
 
@@ -72,7 +75,8 @@ Saved links must be easy to sync from notes and fast to find again through simpl
 | Selected tag with checkmark indicator | Visual distinction for active filter | ✓ Good |
 | Description in preview tooltip | Better quick info than tags | ✓ Good |
 | External link icon removed | Cleaner UI per user feedback | ✓ Good |
-| Homepage-only navigation | Side panel + search provides all needed access | ✓ Good |
+| Homepage only navigation | Side panel + search provides all needed access | ✓ Good |
+| Mobile-friendly layout | Site works well on small screens | — Pending |
 
 ## Evolution
 
@@ -92,4 +96,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-01 after v1.3 milestone complete*
+*Last updated: 2026-04-01 after v1.4 milestone start*
