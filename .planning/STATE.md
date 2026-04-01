@@ -1,3 +1,17 @@
+---
+gsd_state_version: 1.0
+milestone: v1.2
+milestone_name: "Tag Selection Fixes"
+status: milestone complete
+stopped_at: Milestone v1.2 shipped
+last_updated: "2026-04-01T11:40:00.000Z"
+progress:
+  total_phases: 6
+  completed_phases: 6
+  total_plans: 6
+  completed_plans: 6
+---
+
 # Project State
 
 ## Project Reference
@@ -5,14 +19,14 @@
 See: .planning/PROJECT.md (updated 2026-04-01)
 
 **Core value:** Saved links must be easy to sync from notes and fast to find again through simple browsing and filtering.
-**Current focus:** Milestone v1.2 - Tag Selection Fixes
+**Current focus:** Milestone v1.2 complete
 
 ## Current Position
 
-Phase: Not started (defining requirements)
+Phase: All phases complete
 Plan: —
-Status: Defining requirements
-Last activity: 2026-04-01 — Milestone v1.2 started
+Status: v1.2 milestone complete
+Last activity: 2026-04-01 — Milestone v1.2 shipped
 
 ## Milestone History
 
@@ -20,7 +34,7 @@ Last activity: 2026-04-01 — Milestone v1.2 started
 |-----------|-----------|-------------------|
 | v1.0 | 2026-03-31 | Sync pipeline, 186 bookmarks, static routes, homepage search/filters, Cloudflare Pages deploy |
 | v1.1 | 2026-04-01 | Dark theme, side panel, integrated search, hover previews, external link icons |
-| v1.2 | In progress | Tag selection fixes |
+| v1.2 | 2026-04-01 | Selected tag distinct, dropdown/preview sync, description in preview, remove external icon |
 
 ## Accumulated Context
 
@@ -36,22 +50,22 @@ Last activity: 2026-04-01 — Milestone v1.2 started
 - v1.1: Warm dark theme (#1a1614, #d4a574 amber accents)
 - v1.1: Remove tag pills, use dropdown only
 - v1.1: Integrated search in dropdown
-- v1.1: Side panel for bookmark details (hover preview + click for full details)
+- v1.1: Side panel for bookmark details
 - v1.1: External links have icon + amber color distinction
-- v1.2: Selected tag should be visually distinct
-- v1.2: Dropdown and preview area tag selection should sync
-- v1.2: Preview should show description instead of tags
-- v1.2: Remove external link icon
+- v1.2: Selected tag visually distinct (checkmark indicator)
+- v1.2: Dropdown and preview area tag selection synced
+- v1.2: Preview tooltip shows description
+- v1.2: External link icon removed
 
 ### Pending Todos
 
-- v1.2 tag selection UI fixes
+None — v1.2 complete
 
 ### Blockers/Concerns
 
-None yet.
+None
 
 ## Session Continuity
 
-Last session: 2026-04-01 04:30 +08
-Stopped at: Starting new milestone v1.2
+Last session: 2026-04-01 11:40 +08
+Stopped at: Milestone v1.2 shipped

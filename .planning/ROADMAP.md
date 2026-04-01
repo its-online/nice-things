@@ -4,7 +4,7 @@
 
 - ✅ **v1.0 MVP** - Phases 1-4 (shipped 2026-04-01)
 - ✅ **v1.1 UI/UX Refinement** - Phase 5 (shipped 2026-04-01)
-- 🔄 **v1.2 Tag Selection Fixes** - Phase 6 (in progress)
+- ✅ **v1.2 Tag Selection Fixes** - Phase 6 (shipped 2026-04-01)
 - 📋 **v2.0 [TBD]** - Planned
 
 ## Phases
@@ -81,7 +81,7 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. Site renders with dark-first design using CSS variables, with appropriate contrast ratios throughout the UI.
   2. Main bookmark list displays without tag pills; tag and category selection use a single dropdown control with integrated search input.
-  3. Hovering a bookmark shows a quick preview with title, URL, and tags; clicking a bookmark opens a side panel displaying full details (title, external URL as clickable link, description, tags, category, source path).
+  3. Hovered a bookmark show a quick preview with title, URL, and tags; clicking a bookmark opens a side panel displaying full details (title, external URL as clickable link, description, tags, category, source path).
   4. Side panel contains a "Visit Site" button that opens the external URL in a new tab, and all external bookmark links have distinct visual styling (icon + color).
   5. Search filters bookmarks in real-time as the user types, with search state persisted in URL query parameters.
 **Plans**: 1 plan
@@ -91,7 +91,8 @@ Plans:
 
 </details>
 
----
+<details>
+<summary>✅ v1.2 Tag Selection Fixes (Phase 6) - SHIPPED 2026-04-01</summary>
 
 ### Phase 6: Tag Selection Fixes & UI Cleanup
 **Goal**: Fix tag selection interaction bugs and remove external link icon per user feedback.
@@ -103,10 +104,12 @@ Plans:
   3. Selecting a tag in the preview area updates the dropdown control to reflect the selected tag.
   4. Preview area displays bookmark description text instead of showing a list of tags.
   5. External link icon is no longer rendered anywhere in the bookmark display UI.
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 1 plan
 
----
+Plans:
+- [x] 06-01: Tag selection fixes and UI cleanup
+
+</details>
 
 ### 📋 v2.0 [TBD] (Planned)
 
@@ -121,4 +124,4 @@ Plans:
 | 3. Homepage Retrieval UX | v1.0 | 1/1 | Complete | 2026-04-01 |
 | 4. Deployable Static Release | v1.0 | 1/1 | Complete | 2026-04-01 |
 | 5. UI/UX Refinement | v1.1 | 1/1 | Complete | 2026-04-01 |
-| 6. Tag Selection Fixes & UI Cleanup | v1.2 | 0/1 | Not started | - |
+| 6. Tag Selection Fixes & UI Cleanup | v1.2 | 1/1 | Complete | 2026-04-01 |

@@ -1,5 +1,18 @@
 # Milestones
 
+## v1.2 Tag Selection Fixes (Shipped: 2026-04-01)
+
+**Phases completed:** 1 phase, 1 plan, 8 tasks
+
+**Key accomplishments:**
+
+- Selected tag visually distinct with ✓ prefix
+- Dropdown and preview area tag selection synced
+- Preview tooltip shows description instead of tags
+- External link icon removed from bookmark titles
+
+---
+
 ## v1.1 UI/UX Refinement (Shipped: 2026-04-01)
 
 **Phases completed:** 1 phase, 1 plan, 11 tasks
@@ -21,6 +34,5 @@
 **Key accomplishments:**
 
 - Astro/Bun scaffold with a reusable bookmark sync pipeline, committed 186-record dataset, and fixture-backed normalization coverage
-- Completed:
 
 ---
